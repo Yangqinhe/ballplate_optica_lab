@@ -1,0 +1,2380 @@
+{
+  "schema": "source-only-export-1",
+  "date": "2026-10-30",
+  "base_release": "E110_adjustable_settle_20261030_1",
+  "includes_experimental_data": false,
+  "includes_learned_weights": false,
+  "records": [
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/__init__.py",
+      "destination": "src/optical_lab/__init__.py",
+      "sha256": "522962c33fa454fe177a5a76aacd3e09e6cc5e96fe31850808e1bf5161988a7b",
+      "bytes": 98
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/__main__.py",
+      "destination": "src/optical_lab/__main__.py",
+      "sha256": "307299fda7b77d22c64cb51430ec75e5f59d78e9c948786afb3b2544fe45e4b7",
+      "bytes": 79
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/assessment.py",
+      "destination": "src/optical_lab/assessment.py",
+      "sha256": "596bcba9452fa5aa95861f8d71261d6d682f10cfeebaf2ecfe11fc69416d1a12",
+      "bytes": 102923
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/camera_startup.py",
+      "destination": "src/optical_lab/camera_startup.py",
+      "sha256": "7e0162764687eb2eb95cb3a9de66e03298a7a1aec7a4b56362db6aff618fea0c",
+      "bytes": 2308
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/capture.py",
+      "destination": "src/optical_lab/capture.py",
+      "sha256": "7da9c16ed9073420e857a8e0045ac2c6e178d6f94b0934f1fb2798f4351d37de",
+      "bytes": 18945
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/capture_timeout.py",
+      "destination": "src/optical_lab/capture_timeout.py",
+      "sha256": "c0ade3354e6001ae46bdbb7f3f03603344bf0abe14137cabec6c1a0b38e66a28",
+      "bytes": 5378
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/cli.py",
+      "destination": "src/optical_lab/cli.py",
+      "sha256": "5e05566ed3450c6624b6012daf729b5a04924324e161110fa36e77c17ca667ae",
+      "bytes": 19990
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/direction_assessment.py",
+      "destination": "src/optical_lab/direction_assessment.py",
+      "sha256": "eac8b2a5b0a93669af2d4f9519dcc6de776bda799b79d4aed0f86f131f40534f",
+      "bytes": 16719
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/direction_capture.py",
+      "destination": "src/optical_lab/direction_capture.py",
+      "sha256": "7c7e0a9a1fd9e84d9438d2c07fa8fed456412fa18d9a992ff3c594b5a3ab3ef8",
+      "bytes": 28563
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/display.py",
+      "destination": "src/optical_lab/display.py",
+      "sha256": "04c35b26018be83791c5cf5eed3b933968cea678c9505c7cd19e222f8cb16dc5",
+      "bytes": 20534
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/dynamic_encoding.py",
+      "destination": "src/optical_lab/dynamic_encoding.py",
+      "sha256": "139aae23e3fd805574f2281aec6181dbe81730fe59bd40525fbae081d854651e",
+      "bytes": 6260
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/exposure.py",
+      "destination": "src/optical_lab/exposure.py",
+      "sha256": "e11d682eb14254cea47e2c128cc4f3d73a69ca3285db5ff986492233f78adcf7",
+      "bytes": 30705
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/filtering.py",
+      "destination": "src/optical_lab/filtering.py",
+      "sha256": "a52b4d125de86ec10d069938b5742135469933589e21b2118d54da63405a68d7",
+      "bytes": 26009
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/historical.py",
+      "destination": "src/optical_lab/historical.py",
+      "sha256": "ae59da1bfaf7f9abdbb80089ad0de2e1280c553ba1e0019cf0ce293b46e8fda3",
+      "bytes": 18397
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/identification.py",
+      "destination": "src/optical_lab/identification.py",
+      "sha256": "4a7fe2adf65ccbeea9a23879b614e6679b286beb4cb3a4a6f4fca2e049297e10",
+      "bytes": 24226
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/identification_assessment.py",
+      "destination": "src/optical_lab/identification_assessment.py",
+      "sha256": "de27ac819c278ae9704b68ede86372f837e45031cbc7a477cd27887b525e8466",
+      "bytes": 19412
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/legacy_gui.py",
+      "destination": "src/optical_lab/legacy_gui.py",
+      "sha256": "cf018342e9907248320299c5ef73d3538b0adbde738da0e84f7c9290a4803748",
+      "bytes": 53685
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/manual_exposure.py",
+      "destination": "src/optical_lab/manual_exposure.py",
+      "sha256": "21391efebb14bc8d1d61d0d1ec2c23b0fd344f3ad64bbe060102669702cdc08d",
+      "bytes": 9495
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/metrics.py",
+      "destination": "src/optical_lab/metrics.py",
+      "sha256": "132413f2ff8a1e52b159d1aec2bb2d1219f07707e556a8abe44550b8bbe06a8a",
+      "bytes": 9437
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/observability.py",
+      "destination": "src/optical_lab/observability.py",
+      "sha256": "defda16b92a9dcdd543a37766fde0da3960bb5775d96cbda3dac2364aa62fce5",
+      "bytes": 21332
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/observability_assessment.py",
+      "destination": "src/optical_lab/observability_assessment.py",
+      "sha256": "d264323f44122ca346955b9dd8e2939ce6aa1920ed75c2f697e859514b2b150d",
+      "bytes": 33779
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/preview.py",
+      "destination": "src/optical_lab/preview.py",
+      "sha256": "364f7eea18727f827b50d062a3fb8c77f4759264caf777edff068cf7c9acf9b9",
+      "bytes": 21360
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/preview_restart.py",
+      "destination": "src/optical_lab/preview_restart.py",
+      "sha256": "6d3c0bc5c847d83ba209efbeaad8e2327535527892947701a6761f0597c6b703",
+      "bytes": 30921
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/probes.py",
+      "destination": "src/optical_lab/probes.py",
+      "sha256": "6fd784ec721c9a9ba894db39aab68620c774ad8250a997685985f2da79a89c43",
+      "bytes": 16815
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/processed8.py",
+      "destination": "src/optical_lab/processed8.py",
+      "sha256": "40ee92fdadae479b3733b65a6b8da1fa3328294a5c6831a450ef514d39ab17b9",
+      "bytes": 9735
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/processed8_bank.py",
+      "destination": "src/optical_lab/processed8_bank.py",
+      "sha256": "f980d633bf356aabf4ccf08ac214c4c53a224317b94ba8daf719d22903249139",
+      "bytes": 11308
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/protocol.py",
+      "destination": "src/optical_lab/protocol.py",
+      "sha256": "2f651c945db41628181a93d7d77c61433c0ca8dce4ab0a79a41a13772618ab16",
+      "bytes": 1910
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/queued_display.py",
+      "destination": "src/optical_lab/queued_display.py",
+      "sha256": "517203d75716ae430e753022e93b1708f1415fa6d8ad02b38e20358f00fc4327",
+      "bytes": 1887
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/readout.py",
+      "destination": "src/optical_lab/readout.py",
+      "sha256": "3f77cec60a56af05e91afaea8e477d3b66a56404a2dd1bb9d02015c3391e3a3e",
+      "bytes": 5012
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/readout_assessment.py",
+      "destination": "src/optical_lab/readout_assessment.py",
+      "sha256": "95a861d162f518ca858764a21177ad9209e51328c4b0bf85d9d1559ff604116d",
+      "bytes": 25626
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/references.py",
+      "destination": "src/optical_lab/references.py",
+      "sha256": "0c974073926ea74cc31c98ccd8dd3d921f01f27ac316fef3270a61a6c414f626",
+      "bytes": 7972
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/region_overlay.py",
+      "destination": "src/optical_lab/region_overlay.py",
+      "sha256": "802829d2376d3f7cd51d10e58d8a07a8b8b5017c2f3a0188a134e6d8f593bb1d",
+      "bytes": 9910
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/reporting.py",
+      "destination": "src/optical_lab/reporting.py",
+      "sha256": "001713ab3c6c146c57082ecef83ddb2eacd580ec29f1fd59e01950882cedda87",
+      "bytes": 11511
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/simulate.py",
+      "destination": "src/optical_lab/simulate.py",
+      "sha256": "fbfce4aa74f54442a2d642181b5a84f153d1422e33662bcbac3864dd5a6fd02a",
+      "bytes": 40822
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/stability.py",
+      "destination": "src/optical_lab/stability.py",
+      "sha256": "fb937d0278185eef4baa68c46e56bae277b8257a690573feff193992fc9e11f7",
+      "bytes": 13308
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/stability_gui.py",
+      "destination": "src/optical_lab/stability_gui.py",
+      "sha256": "6cccb0ff24e04fbed8ff6e8be6f7edc2e6ae186625a52472b05285fbf4c00ea2",
+      "bytes": 29147
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/state_sampling.py",
+      "destination": "src/optical_lab/state_sampling.py",
+      "sha256": "7c8b00ed1365c07f8372ea43b41cd82f6119015f70c2c44cf7009d84be1789cf",
+      "bytes": 20535
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/state_sampling_gui.py",
+      "destination": "src/optical_lab/state_sampling_gui.py",
+      "sha256": "c5683e8fe54503cef92b757adb4ef39794cbd7462d88a43f7298d745f8c5d717",
+      "bytes": 22700
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/storage.py",
+      "destination": "src/optical_lab/storage.py",
+      "sha256": "81450f0184a26e70b1d84b3f92e5600a1b6b6c6bb652ae2dc99ef09d3c7bb1af",
+      "bytes": 4588
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/study.py",
+      "destination": "src/optical_lab/study.py",
+      "sha256": "051d94de6a77b9eb1619f81c09f1c96ffb38b7a0c09fe786e12abf9ce1c7542b",
+      "bytes": 23722
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E081_readout_regions_20261028_1/staged/optical_lab/effective_frame.py",
+      "destination": "src/optical_lab/effective_frame.py",
+      "sha256": "3caeff226af7b319ca9bf5984c59f97bfba018a433dc003fe16e28f507a8baa9",
+      "bytes": 8676
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E081_readout_regions_20261028_1/staged/optical_lab/region_overlay.py",
+      "destination": "src/optical_lab/regions.py",
+      "sha256": "ac22304cfef258a5340dea99d1bdc9b2fb955641223074ee6e049a433c846f86",
+      "bytes": 15379
+    },
+    {
+      "source": "ballplate_optical_lab/tests/test_metrics.py",
+      "destination": "tests/test_metrics.py",
+      "sha256": "d7540d2331356daddf20ba02d582454560b97c8a175c82bfb7fab0783574835a",
+      "bytes": 2421
+    },
+    {
+      "source": "ballplate_optical_lab/tests/test_readout.py",
+      "destination": "tests/test_readout.py",
+      "sha256": "4acea428d422f3ca767066143c9f70eb3473737e576a1c30abb5ef501d2bad42",
+      "bytes": 6153
+    },
+    {
+      "source": "ballplate_optical_lab/run_lab.py",
+      "destination": "run_lab.py",
+      "sha256": "6b7f4d8b248f9d755a56d0665a631035ada4a1b47cd48b18164c33fcc753fc33",
+      "bytes": 264
+    },
+    {
+      "source": "ballplate_optical_lab/pyproject.toml",
+      "destination": "pyproject.toml",
+      "sha256": "f2104e2edc1100f966aae1c314cd1b39100d81e7cba3341628971bf498a836ea",
+      "bytes": 426
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/dashboard96.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/dashboard96.py",
+      "sha256": "b539020193063c2fa82aeddbbb0c00a128d6ad9df3eb0f5dc109a72a41703150",
+      "bytes": 12466
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/dashboard96_session.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/dashboard96_session.py",
+      "sha256": "ae13e308d6946602f2941c916123f85e4a8c757e64e2d8f7784e8b732529f755",
+      "bytes": 11708
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/evaluate96.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/evaluate96.py",
+      "sha256": "3efc5aa6b9bb6fec0892f57cbc8ac55ba39640e71a224a120fd25170bc75195c",
+      "bytes": 4139
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/hardware_contract.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/hardware_contract.py",
+      "sha256": "de0ecfac23269ed9db8fe3022f261303100dbdffb0cbf315595521e88d0ba373",
+      "bytes": 5942
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/launch_dashboard96.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/launch_dashboard96.py",
+      "sha256": "9d31868aefcd83d022d2a942f474671416fbcb7baf75fd9eaeba2297537cd9fc",
+      "bytes": 659
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_adapt_v22/__init__.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_adapt_v22/__init__.py",
+      "sha256": "060842ae9ec173e1e76ad6582d6d764fcd437ca939c7029d0381998b41413520",
+      "bytes": 76
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_adapt_v22/core.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_adapt_v22/core.py",
+      "sha256": "ec6d37c77314af399b617aeebe9afc62e888f036dffc7cb5951c39aca374aa79",
+      "bytes": 11861
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_adapt_v22/direct_alignment_gui.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_adapt_v22/direct_alignment_gui.py",
+      "sha256": "511439fd108a0c0b01035725446f1a8427c896ba729256dcd4a22fefae41ce0b",
+      "bytes": 10729
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_adapt_v22/launch_realtime.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_adapt_v22/launch_realtime.py",
+      "sha256": "7a42cf0dbe5a11d52ceadd17ff8d6ad6bfbd4b938b3c71ce0e96adab45227f7e",
+      "bytes": 2221
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_adapt_v22/offline_smoke.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_adapt_v22/offline_smoke.py",
+      "sha256": "0acf5a7f733b07f42d453340273d47e9ae6c4a57151aca0298701cd995a7e26f",
+      "bytes": 2882
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_adapt_v22/page.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_adapt_v22/page.py",
+      "sha256": "0e37d21610aecf637193e7c89c1d190ee6a7d0caf21b0dba42a2591a3b5ae6cf",
+      "bytes": 6924
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_adapt_v22/pilot.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_adapt_v22/pilot.py",
+      "sha256": "651df321dae6e77926c220c6323917f9c133417a88a575a8701bcde30cf07364",
+      "bytes": 5776
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_adapt_v22/prepare.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_adapt_v22/prepare.py",
+      "sha256": "49c0e06dee67d73ec44a01bbb423bbd48c9fdb6bcc1cb5106ab0d21483b6a4cb",
+      "bytes": 5441
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_adapt_v22/test_adaptation.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_adapt_v22/test_adaptation.py",
+      "sha256": "e5d7b69c926958eaa6ebe2776b28e2bf42e8fa8732291ef792e1271045b0e914",
+      "bytes": 10784
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_adapt_v22/worker.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_adapt_v22/worker.py",
+      "sha256": "4606163b6010bc3118cc2a9b4da8005bf662d4aa49fef811af23f5442593d1a8",
+      "bytes": 15507
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_deploy_v20/__init__.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_deploy_v20/__init__.py",
+      "sha256": "ecc9bcd3a78b9093da6d9553f89c5f7c2d19ce82aa1721b6cff7e4ab914f8118",
+      "bytes": 77
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_deploy_v20/contract.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_deploy_v20/contract.py",
+      "sha256": "945dae1188a62bb375d9db4ae46df466fe7344cef85862419b60b557dd205b13",
+      "bytes": 4167
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_deploy_v20/direct_alignment_gui.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_deploy_v20/direct_alignment_gui.py",
+      "sha256": "c8dbb48daa5a59886ae8778d1aa46590374fa92902f6aa0f6e493003ceb34173",
+      "bytes": 16996
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_deploy_v20/launch_realtime.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_deploy_v20/launch_realtime.py",
+      "sha256": "95f08bd466c2b265489d645c66fee7406e5fdbf4e3a44c9cf5837312ac4e9e9c",
+      "bytes": 2522
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_deploy_v20/page.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_deploy_v20/page.py",
+      "sha256": "b5cbfa5471b39ac5a44f2fbd058fcb29e57821dda492c8aa371ee289f6838f5f",
+      "bytes": 10461
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_deploy_v20/protocol.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_deploy_v20/protocol.py",
+      "sha256": "126f4e55831de8a29463274af45c18d4ce34515419cd7208c9dc77c8037c89ea",
+      "bytes": 8200
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_deploy_v20/test_deployment.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_deploy_v20/test_deployment.py",
+      "sha256": "a3ea399f9b934a86a2f2c2faa0c321af10f908a294edb42562ef4d1e9c99114c",
+      "bytes": 14335
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_deploy_v20/worker.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_deploy_v20/worker.py",
+      "sha256": "f064a7401ce30fddbd28a85965053af0e935a8fe294f99f55d7af07f8280f434",
+      "bytes": 9666
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_deploy_v21/__init__.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_deploy_v21/__init__.py",
+      "sha256": "2957fe05cb61df444a2a57140ae109062245943e040b0f0537fb1cdc659c6828",
+      "bytes": 79
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_deploy_v21/direct_alignment_gui.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_deploy_v21/direct_alignment_gui.py",
+      "sha256": "491b0d58e0a9672c81ca7dae7bd7f0c86f41123fb4a2ba7b9309f5860163be37",
+      "bytes": 4598
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_deploy_v21/launch_realtime.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_deploy_v21/launch_realtime.py",
+      "sha256": "c9f40079ea88a830b4c2823559779efb40b74eaec8dc921a52ea25963e28ce32",
+      "bytes": 2364
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_deploy_v21/page.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_deploy_v21/page.py",
+      "sha256": "30f775c7d4551ed0c4259c3fa84dafc59bc2e49e81c4512dbbeebb90ab94b094",
+      "bytes": 9089
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_deploy_v21/test_display.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_deploy_v21/test_display.py",
+      "sha256": "96bcae7d7de973e1d97f89163a270485b0cb3d7eef466b75d399d9169ebd156b",
+      "bytes": 6894
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_loop_v23/__init__.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_loop_v23/__init__.py",
+      "sha256": "be511a7f582e646cea2d07464895fe527f44f91fc12c6fffe3e3a199fa6130a0",
+      "bytes": 73
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_loop_v23/camera.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_loop_v23/camera.py",
+      "sha256": "f3a9b425e1100e75d2f320ffc4e4343d51c097c5c169682875e556208808ad98",
+      "bytes": 3135
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_loop_v23/child.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_loop_v23/child.py",
+      "sha256": "c9b36aca6dab750fcb4b66d7bc7928fd7e91d078967e59e27ad11873397d63f9",
+      "bytes": 5656
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_loop_v23/core.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_loop_v23/core.py",
+      "sha256": "2932342575f9789e9155f7a0e42d135dce1d6272a2836ca7e28c08b8e9895cd8",
+      "bytes": 5293
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_loop_v23/direct_alignment_gui.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_loop_v23/direct_alignment_gui.py",
+      "sha256": "99564812cfc0514b343e4e12ae5e6079f9fa6eafa0381b08ac2b5b4ce7284f9c",
+      "bytes": 11271
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_loop_v23/launch_realtime.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_loop_v23/launch_realtime.py",
+      "sha256": "3610e65f79621ae7d0a03a46aa190ce8a3ae3a42b009b7064f4f0b7c3d9439f7",
+      "bytes": 2117
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_loop_v23/page.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_loop_v23/page.py",
+      "sha256": "11e896a35bd2d84d13685ba935ea46acc6db971ff476090cc52a693cab0fe379",
+      "bytes": 12590
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_loop_v23/switch_from_v22.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_loop_v23/switch_from_v22.py",
+      "sha256": "7b9ec7558b14f6b7f3fcf314dfaf2968d80e8d21fc1db377f40e5af9e789c023",
+      "bytes": 3839
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_loop_v23/test_integration.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_loop_v23/test_integration.py",
+      "sha256": "7f51b83a9876ba45b3b7759165e9390e7848c6682b42a7bed4e22d1282f6417f",
+      "bytes": 6506
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_loop_v23/test_loop.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_loop_v23/test_loop.py",
+      "sha256": "7584e74adafbc102e98f7582720c1df7e6347949ab1335ff4eec5ab6ef62c1fd",
+      "bytes": 8439
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_loop_v23/worker.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_loop_v23/worker.py",
+      "sha256": "3271c13279bf7955f361ecd7c094380384ea595de471b8608d124b77f87ee90d",
+      "bytes": 13042
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v17/bench.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v17/bench.py",
+      "sha256": "27cf8f733211bc5cff0132e09cab8df12cd90e20bd7140c005d5c05bad5f491b",
+      "bytes": 18953
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v17/black_pixels.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v17/black_pixels.py",
+      "sha256": "62acf62879311d4f0a689dbe95d99a14d8520b56cdce98b7554b868c06de245f",
+      "bytes": 5907
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v17/calibration_camera.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v17/calibration_camera.py",
+      "sha256": "7e23e353e51ba02ff871679b386d898fabde8baeb6cf6aaebe01fd87abeaf63d",
+      "bytes": 8733
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v17/calibration_desktop.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v17/calibration_desktop.py",
+      "sha256": "17c1b833a16041c090ce4b4010a2ed0be562a9e737b8202f21dd2b13a7d49f18",
+      "bytes": 7000
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v17/calibration_math.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v17/calibration_math.py",
+      "sha256": "1f409014acd12037f2363c0f7aaf75b08b2dbdbd4363dfcbc5623475db6558e4",
+      "bytes": 14342
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v17/camera_recheck.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v17/camera_recheck.py",
+      "sha256": "61ea131a134b4e17f2a5deb1a3b3d51f7fcb578df45f8e23b63df3ea7d0a8a3f",
+      "bytes": 4928
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v17/diffraction_model.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v17/diffraction_model.py",
+      "sha256": "7c69033621ed3f0709c84e5698daf8f80e4b2cd85c6687e2d4bd0db7bf481edb",
+      "bytes": 9242
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v17/diffraction_worker.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v17/diffraction_worker.py",
+      "sha256": "af2b52fbb847dd714274067a26c26957265ec5034e8b659f2b252e85a03bb8aa",
+      "bytes": 3769
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v17/display_linux.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v17/display_linux.py",
+      "sha256": "fca09ff061b6c92395a826e6328182f68b09fac841a1447ed45186b30a3abdf6",
+      "bytes": 3826
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v17/display_orientation.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v17/display_orientation.py",
+      "sha256": "6f5bf316bcdbf85ab7d4fd2ea79acbccd317bf5cb871a2587435f30dfd10ecf2",
+      "bytes": 1538
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v17/link_diagnostics.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v17/link_diagnostics.py",
+      "sha256": "9a71dd1f37929942c59fb362b5f96fd87f80e383c13ae9344b837314d5702234",
+      "bytes": 4902
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v17/realtime_gui.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v17/realtime_gui.py",
+      "sha256": "bc9ed820b57a62e61ab8d671da01dfccd5c6f6f81d4a98406a4636e2728f556a",
+      "bytes": 65905
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v17/realtime_model.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v17/realtime_model.py",
+      "sha256": "c2bdd9d2d986f89a0c66f6264a39829924a245194b046ef7b6c1d96f1180d03c",
+      "bytes": 5682
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v17/realtime_recovery.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v17/realtime_recovery.py",
+      "sha256": "61a8c304fe8765ad152d7c9fe639672a100423e18639a34d654f30927c9cc39c",
+      "bytes": 570
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v17/realtime_worker.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v17/realtime_worker.py",
+      "sha256": "e75cb96a31424fb798e07b35fd6e5bafc23cc089fb5b51800fe78c48750c05c5",
+      "bytes": 19872
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v17/slm_coordinates.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v17/slm_coordinates.py",
+      "sha256": "2da691968c218d35d22d9d2a2bd9305fad7f66455153e707fb2faa060002d464",
+      "bytes": 1191
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v17/spatial_calibration.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v17/spatial_calibration.py",
+      "sha256": "55627c0c3bcf0f80b79ffb5a8db1e2796414001ecbbc4b378ffaaed1ba5134d8",
+      "bytes": 10375
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v17/spin_c.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v17/spin_c.py",
+      "sha256": "a3b472352a09da162a5f8d519fe3f1bd5c33491b09a180bd9f654be78809b826",
+      "bytes": 13702
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v17/stable_views.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v17/stable_views.py",
+      "sha256": "fb8d3a43621b9189b125a2cacf90d957106103057322dfde8561138e5f1d2f54",
+      "bytes": 3447
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v18/direct_alignment_gui.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v18/direct_alignment_gui.py",
+      "sha256": "1ddc618d522844b8fa317a649eb163eca24a57f497757dc8b62d9b6bf27c61c0",
+      "bytes": 23007
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v18_restart/direct_alignment_gui.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v18_restart/direct_alignment_gui.py",
+      "sha256": "99d5c23984b28a68ee0a6b6efcdae814cdee319175a9b2f5210cdc4a37f5a4b0",
+      "bytes": 9037
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v18_restart/resume_state.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v18_restart/resume_state.py",
+      "sha256": "402744a40a78dece244500e38735b25eb6278bdd59f104ca9eb121e6ec503e76",
+      "bytes": 5378
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v19_trigger/__init__.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v19_trigger/__init__.py",
+      "sha256": "d9c358f91b845f8b20e2f49b45ee7b7275ee3b04222658de349e9b1f79f44c45",
+      "bytes": 76
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v19_trigger/camera.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v19_trigger/camera.py",
+      "sha256": "f5aa825c5766d65dc0066b32bc1fe2f1c12a4700cb9298ae70c29424064646a3",
+      "bytes": 5233
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v19_trigger/direct_alignment_gui.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v19_trigger/direct_alignment_gui.py",
+      "sha256": "bf72f621c561d716b0de75e65d67e5bf8644a1d02edc7bca6c30a7b6335b5035",
+      "bytes": 10600
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v19_trigger/worker.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v19_trigger/worker.py",
+      "sha256": "450739632fa4737814a09bb8a114e38114ee810989b1b83c9ba763fd953b583f",
+      "bytes": 10684
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v19_trigger_r2/__init__.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v19_trigger_r2/__init__.py",
+      "sha256": "c41af4cb3c2616b59dbf4f55992048820032c3338e21d36ac61dcba0899fde80",
+      "bytes": 83
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v19_trigger_r2/camera.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v19_trigger_r2/camera.py",
+      "sha256": "e2b68adcc0bc9edf0f0d1f00f71d3d294aa633055f077124478d6efba2b6b362",
+      "bytes": 881
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v19_trigger_r2/direct_alignment_gui.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v19_trigger_r2/direct_alignment_gui.py",
+      "sha256": "206efcc6b5eafacba0c5d250d85eea377a534dc9927be4c434bbdb5baffd3942",
+      "bytes": 4994
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v19_trigger_r2/worker.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v19_trigger_r2/worker.py",
+      "sha256": "c1957848d0cbf465890bb705a74d26e044dd9532c209fccfaf3032e19d7e9c40",
+      "bytes": 1482
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v19_trigger_r3/__init__.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v19_trigger_r3/__init__.py",
+      "sha256": "16432229dd020392569a798d98a626c08ab0b259a4049e844bb1897dbe2803a3",
+      "bytes": 80
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v19_trigger_r3/direct_alignment_gui.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v19_trigger_r3/direct_alignment_gui.py",
+      "sha256": "29caf6ad0ebd5b138e68f3d31ef6cf3e70f1ce1b7b5b3f0fbbdc0aea58cf98af",
+      "bytes": 8707
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v19_trigger_r3/launch_realtime.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v19_trigger_r3/launch_realtime.py",
+      "sha256": "aa477fece09ba62ea89cf50712ee9b46c6a2ad0008f493039b1d3698eb1b0a50",
+      "bytes": 2465
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v19_trigger_r3/state.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v19_trigger_r3/state.py",
+      "sha256": "a95d9f3743caca33f97de463630928210d5465f632f24bdb736a8bc2691af4ab",
+      "bytes": 1631
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v19_trigger_r3/test_recovery.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v19_trigger_r3/test_recovery.py",
+      "sha256": "35ca30ed685aacbbe370a71bd5a8c86f8b6f517abb4c4e4d2f390ad6fd406000",
+      "bytes": 4517
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v19_trigger_r5/__init__.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v19_trigger_r5/__init__.py",
+      "sha256": "eade5a534746ca28ae16289d01b0313ea8f05233f76e02c0e56d4b0670a10d1c",
+      "bytes": 70
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v19_trigger_r5/direct_alignment_gui.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v19_trigger_r5/direct_alignment_gui.py",
+      "sha256": "e8a060cb4aa814aac1dfa54f3f223a7f5388fff6a15cbc09cba2e7044b75f334",
+      "bytes": 8449
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v19_trigger_r5/launch_realtime.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v19_trigger_r5/launch_realtime.py",
+      "sha256": "077164a74c0925d72ac867b96a1932458527f8ef5966403de17622c87af48c52",
+      "bytes": 2486
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v19_trigger_r5/recovery_record.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v19_trigger_r5/recovery_record.py",
+      "sha256": "326e6eb783f13c97a713869d98306bc71586cd68e2d7ad0697222631659199e9",
+      "bytes": 819
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v19_trigger_r5/test_preview.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v19_trigger_r5/test_preview.py",
+      "sha256": "07c2bf8fb2a37628299329053a13f985ca162c02c09d6503f4604d76f92ae7ef",
+      "bytes": 6989
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v19_trigger_r5/worker.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v19_trigger_r5/worker.py",
+      "sha256": "e4434e34802c995cce1d0bc6e5b8e7e9dc44454c837a87bdc9d086f9583855fa",
+      "bytes": 9689
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v19_trigger_r7/__init__.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v19_trigger_r7/__init__.py",
+      "sha256": "c80234ad6ea9008cd3eb631cd001641dbf31801666d6eb117cc4d31b98dd5cb9",
+      "bytes": 72
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v19_trigger_r7/camera.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v19_trigger_r7/camera.py",
+      "sha256": "a308caff06730e5b17eb7f46699a5219cbb3a1a412771789e2942de7a07d6836",
+      "bytes": 2933
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v19_trigger_r8/__init__.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v19_trigger_r8/__init__.py",
+      "sha256": "5daaeec7cbf86d229b4ecd31ac06e084352ac515f181b7b10e9987f46bbf01c9",
+      "bytes": 71
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/live_manual_v19_trigger_r8/camera.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/live_manual_v19_trigger_r8/camera.py",
+      "sha256": "0c53c3512871d6c33a313b8bf01289ae5bd813fa2a33df644b6c40fb15648156",
+      "bytes": 2635
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/model96.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/model96.py",
+      "sha256": "e91db6b1f3e8c8b62f4b5df8a58d87bc42cd8ba7d352cfb90a380beaca42389e",
+      "bytes": 9293
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/night_opt_20261020/__init__.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/night_opt_20261020/__init__.py",
+      "sha256": "ae2bcf34756a54bce99a58e59873ac136ba8c0e1946dc17db50f1e5debaf6e19",
+      "bytes": 77
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/night_opt_20261020/manual_io.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/night_opt_20261020/manual_io.py",
+      "sha256": "86a66e350fc517b6c234ecad462a0b9b9efe9473c3b4b85e2a9f16b9e5bc2ad4",
+      "bytes": 14500
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/night_opt_20261020/manual_io_v11.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/night_opt_20261020/manual_io_v11.py",
+      "sha256": "0a995aa58b23cb92afdf7343948f3ec0496f3c9d614796a604e0858ffca1ffa8",
+      "bytes": 4436
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/night_opt_20261020/manual_io_v13.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/night_opt_20261020/manual_io_v13.py",
+      "sha256": "1deadaabb3ca176b049be66a0a0b56f22b4976d7e300fa7ca856646f76657f2f",
+      "bytes": 1540
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/night_opt_20261020/manual_io_v17.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/night_opt_20261020/manual_io_v17.py",
+      "sha256": "1929bff934dc86d0a99d6ceb05a3088685c7af6ba302cae7ab6025f4029025ec",
+      "bytes": 7734
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/night_opt_20261020/ui.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/night_opt_20261020/ui.py",
+      "sha256": "424e37ddabda09c8d6fd83984bc1e35e9e5daa477ad7e16ed68b762cd94fa442",
+      "bytes": 8180
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/route1_150_100/model.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/route1_150_100/model.py",
+      "sha256": "fd5b77e4193a91db19c5f519f9b904b93ac0db26c2ebaa91618a628dd4e4d46e",
+      "bytes": 8423
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/route1_fourier_v3/model.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/route1_fourier_v3/model.py",
+      "sha256": "289968a7556f9adc39d66d40986f198ad7a46912dca81b8b495c8af2ff7afd64",
+      "bytes": 8701
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/route1_fourier_v3/transform.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/route1_fourier_v3/transform.py",
+      "sha256": "da021211682a5f9e2162150c62ac6af448f70b58d7c01988d8a177de42613a1e",
+      "bytes": 1668
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/route1_fourier_v4/audit.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/route1_fourier_v4/audit.py",
+      "sha256": "8802f520b52a3af3f45c48b9e87378858c18695394eb382b97b8d97ca78fab2c",
+      "bytes": 6121
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/route1_fourier_v4/evaluate.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/route1_fourier_v4/evaluate.py",
+      "sha256": "aece1d0d05c749d270843c14b0b498845f9c805fbbc94c29d7491985602b39fd",
+      "bytes": 2089
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/route1_fourier_v4/model.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/route1_fourier_v4/model.py",
+      "sha256": "c6d6077aedc2f1bf2c51629febfc818ad92857e376b536da569d28186c3f83d0",
+      "bytes": 4646
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/route1_fourier_v4/train.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/route1_fourier_v4/train.py",
+      "sha256": "1e4c1d28338f7d2a228e88b1a67a9cb2c1cec92b89c2ea4e5f944ab277ccb115",
+      "bytes": 11827
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/runtime96.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/runtime96.py",
+      "sha256": "8335fe377699651b1fcbbb9f6b71db1512fd9af9a87c84736dd4f563b627b756",
+      "bytes": 1048
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/tools/capture_ccd_transport_observation_v18.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/tools/capture_ccd_transport_observation_v18.py",
+      "sha256": "16ac2e062318257bf7f273c83d609eb04414b10e29269e1923a1fcae2c92f228",
+      "bytes": 8689
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/tools/configure_singlebit_vsync_v101.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/tools/configure_singlebit_vsync_v101.py",
+      "sha256": "9b5260ce832d8594eee1f57c84de3bf0f3c95b811e2806ae6f087d9f53a8df38",
+      "bytes": 12454
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/tools/diagnose_black_restart_v83.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/tools/diagnose_black_restart_v83.py",
+      "sha256": "08fc399b72c5446a99ddf8caffac597b6eb547a1335ed801fca5154d629461f7",
+      "bytes": 11100
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/tools/diagnose_settled_trigger_writes_v88.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/tools/diagnose_settled_trigger_writes_v88.py",
+      "sha256": "b595325d4c72a14f4dc8918fb39f00c13f06a88234c5cc10a46133131d57133e",
+      "bytes": 7436
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/tools/grating_repeat_math.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/tools/grating_repeat_math.py",
+      "sha256": "a8cc3323d75896785cd749c00e18ad4df8ebd04508aa42fd9aa158524d092e6d",
+      "bytes": 1854
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/tools/inspect_recovery_ui_v20.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/tools/inspect_recovery_ui_v20.py",
+      "sha256": "2778c2805cb24a664c4f5d966ea815d50208f2a934b9975f3d96c6c006ae634d",
+      "bytes": 5387
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/tools/learned_repeat_math_v19.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/tools/learned_repeat_math_v19.py",
+      "sha256": "aa9840eedc3c189dd0ab0d84df17efd400b2f3892cfcec1c26f7973ab17e033f",
+      "bytes": 3469
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/tools/load_current_adaptation_bundle_v134.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/tools/load_current_adaptation_bundle_v134.py",
+      "sha256": "6fe34d3955fe350bc3f0c59385be36b0a26cdf11277c2110468b7150b7507b7b",
+      "bytes": 7341
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/tools/optical_ui_v19.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/tools/optical_ui_v19.py",
+      "sha256": "5adc66b31d10ceb70f992e670fbb243eeec2d7b2a92c54966ab53bae61d88f55",
+      "bytes": 8083
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/tools/probe_line0_trigger_v18.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/tools/probe_line0_trigger_v18.py",
+      "sha256": "9fa86521d9453a8dec1a338ca0acc3be3f5eb4a6e72bfc23994593bce3e62740",
+      "bytes": 18564
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/tools/qualify_manual_black_v108.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/tools/qualify_manual_black_v108.py",
+      "sha256": "9b52995210bfeb6b2ea62da656d061f7d8fa25ae46b7b3bbf1841e8836889cee",
+      "bytes": 13714
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/tools/qualify_singlebit_ccd_v96.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/tools/qualify_singlebit_ccd_v96.py",
+      "sha256": "b776bebe5dff3b93a49e96f248a0d507df2c04e53bb83424e6f9a1732ac5b5f0",
+      "bytes": 9643
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/tools/read_dlpc900_linux_v100.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/tools/read_dlpc900_linux_v100.py",
+      "sha256": "0d1508e027739b02bda25824fc47d1e7102e9520fcdb4aaf9939b1a8686d949c",
+      "bytes": 8720
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/tools/select_verified_mode_v17.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/tools/select_verified_mode_v17.py",
+      "sha256": "76d9aa217605c7d3f9742094724863ff72fadec149e08da50b7a084111d45e1f",
+      "bytes": 10522
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/tools/static_learned_ccd_v28.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/tools/static_learned_ccd_v28.py",
+      "sha256": "d4faaa6aef12ffa6a6ab8957eb506a03baa80126f312998d47848900481c01b7",
+      "bytes": 21085
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/tools/static_singlebit_v109.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/tools/static_singlebit_v109.py",
+      "sha256": "46621f76abed71f75f3f55e3edae5d43c6d13a221ac22c1f34dbb75f3f6c7153",
+      "bytes": 18206
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/tools/static_ui_v18.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/tools/static_ui_v18.py",
+      "sha256": "e16c1a46d79e53a5c9cca1412a0ace9056bc68624735476cf965c94d13e9da44",
+      "bytes": 11532
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/tools/trigger_ui_v19.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/tools/trigger_ui_v19.py",
+      "sha256": "d157563a2405409c465ccbe8cbfe63083ca2421d21e29559bf6c07e59c02c3b4",
+      "bytes": 6400
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/workbench/__init__.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/workbench/__init__.py",
+      "sha256": "864a453c9cad3984dc039aea343bf11193963a169e283b3c40187f07578f0bf7",
+      "bytes": 77
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/workbench/registry.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/workbench/registry.py",
+      "sha256": "6724dea0beeb75f49df74fd95d545199e32927970f1ca2ad9834173f0294d436",
+      "bytes": 2538
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/workbench/twin/__init__.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/workbench/twin/__init__.py",
+      "sha256": "5a16112e878ca14b0cba3cd92abf258700cd200abd52345c18ec1dfb03888d68",
+      "bytes": 78
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/workbench/twin/capture.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/workbench/twin/capture.py",
+      "sha256": "7e16d480d528b026c218d49e3aaa5c3a8a786195c224c26e4beaab86ba3c9399",
+      "bytes": 9183
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/workbench/unified/__init__.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/workbench/unified/__init__.py",
+      "sha256": "67cd034ed6911dd2cdc2ea6472a21f1fffb78420909c1090f31406706850b868",
+      "bytes": 76
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/workbench/unified/capture_static.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/workbench/unified/capture_static.py",
+      "sha256": "4273fc152b45501b6a70435bc98c7b20b88b5998eed99fef954365c5d3c66d26",
+      "bytes": 7221
+    },
+    {
+      "source": "ballplate_fourframe96_deploy/workbench/unified/pointer_control.py",
+      "destination": "snapshots/workspace/ballplate_fourframe96_deploy/workbench/unified/pointer_control.py",
+      "sha256": "025ad31f693a7b30e0379be69174ad130be5d45f6634f2cfc78a9e35277f442b",
+      "bytes": 2216
+    },
+    {
+      "source": "ballplate_fourframe_optical_ppo/fourframe_checkpoint.py",
+      "destination": "snapshots/workspace/ballplate_fourframe_optical_ppo/fourframe_checkpoint.py",
+      "sha256": "995c94f6400daa2cdfb33fd528e9127985b98d125f4c5778cf266afad79a0065",
+      "bytes": 1523
+    },
+    {
+      "source": "ballplate_fourframe_optical_ppo/fourframe_dashboard.py",
+      "destination": "snapshots/workspace/ballplate_fourframe_optical_ppo/fourframe_dashboard.py",
+      "sha256": "cb3c8c6d4f3b8598d848abbf18be1c1bf1d57d4cdf7170905323d5059c3adf9e",
+      "bytes": 21400
+    },
+    {
+      "source": "ballplate_fourframe_optical_ppo/fourframe_dashboard_session.py",
+      "destination": "snapshots/workspace/ballplate_fourframe_optical_ppo/fourframe_dashboard_session.py",
+      "sha256": "dc24fccb850a02d6e897a8bb6a99ca77def2f70ed22a6465b024661d07d1141c",
+      "bytes": 14889
+    },
+    {
+      "source": "ballplate_fourframe_optical_ppo/fourframe_dashboard_worker.py",
+      "destination": "snapshots/workspace/ballplate_fourframe_optical_ppo/fourframe_dashboard_worker.py",
+      "sha256": "00dfa7a9966fba1597c0c7369de9887460a3f06ed769befaaa732322fc6daf5e",
+      "bytes": 4851
+    },
+    {
+      "source": "ballplate_fourframe_optical_ppo/fourframe_evaluate.py",
+      "destination": "snapshots/workspace/ballplate_fourframe_optical_ppo/fourframe_evaluate.py",
+      "sha256": "0f677db07327e677742e105e5059d511e44a8d95c5f7d72a830cb542a18caeb8",
+      "bytes": 6518
+    },
+    {
+      "source": "ballplate_fourframe_optical_ppo/fourframe_model.py",
+      "destination": "snapshots/workspace/ballplate_fourframe_optical_ppo/fourframe_model.py",
+      "sha256": "296505ba4949f02da248a7fb7b2f9dc4e8defd2d1d955e54d5147f133dd10067",
+      "bytes": 7903
+    },
+    {
+      "source": "ballplate_fourframe_optical_ppo/fourframe_runtime.py",
+      "destination": "snapshots/workspace/ballplate_fourframe_optical_ppo/fourframe_runtime.py",
+      "sha256": "0369ac043e4bb97c964f5a0d91bef7a2b3b23fc26c07ffd6b2f06101183d46de",
+      "bytes": 1036
+    },
+    {
+      "source": "ballplate_fourframe_optical_ppo/fourframe_training.py",
+      "destination": "snapshots/workspace/ballplate_fourframe_optical_ppo/fourframe_training.py",
+      "sha256": "900fad3c0c9cdbb4180e3810562df19bc4924d94b37f294d41a3f2219d00a19f",
+      "bytes": 12259
+    },
+    {
+      "source": "ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/mnist_sdon/__init__.py",
+      "destination": "snapshots/workspace/ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/mnist_sdon/__init__.py",
+      "sha256": "315c6fb5ae08017b2c20845186f7ae44b456ee960ee0c66d228aa1c719d22bdf",
+      "bytes": 198
+    },
+    {
+      "source": "ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/mnist_sdon/config.py",
+      "destination": "snapshots/workspace/ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/mnist_sdon/config.py",
+      "sha256": "75e6ae3dae55a1d0db0c6d381d8e77a5a401c468d4bae62e01074b5861d935de",
+      "bytes": 21326
+    },
+    {
+      "source": "ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/mnist_sdon/data.py",
+      "destination": "snapshots/workspace/ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/mnist_sdon/data.py",
+      "sha256": "57a3db86dceac40ce2a885e59c43f41ce980275128b412278dc86ae2ace566b4",
+      "bytes": 13747
+    },
+    {
+      "source": "ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/mnist_sdon/encoding.py",
+      "destination": "snapshots/workspace/ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/mnist_sdon/encoding.py",
+      "sha256": "759277a28e18cd0ac9106b868338c5a6e4a0e1390491e7050f8405f2cdf74cd9",
+      "bytes": 3182
+    },
+    {
+      "source": "ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/mnist_sdon/hardware_optical.py",
+      "destination": "snapshots/workspace/ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/mnist_sdon/hardware_optical.py",
+      "sha256": "4cc970728eb8247f606fea47bf9863f23e5dd11abb5355e8d908affc7e4234c2",
+      "bytes": 34993
+    },
+    {
+      "source": "ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/mnist_sdon/losses.py",
+      "destination": "snapshots/workspace/ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/mnist_sdon/losses.py",
+      "sha256": "926edf962029dc12f57c601c9312714156e6bc92620271053cb2d09a234fc0a4",
+      "bytes": 2094
+    },
+    {
+      "source": "ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/mnist_sdon/model.py",
+      "destination": "snapshots/workspace/ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/mnist_sdon/model.py",
+      "sha256": "85a3c55a73c2f89c370849ecb2eb5fcb1d64ce89e4ab60a4bba043a4dd764db4",
+      "bytes": 3514
+    },
+    {
+      "source": "ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/mnist_sdon/neurons.py",
+      "destination": "snapshots/workspace/ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/mnist_sdon/neurons.py",
+      "sha256": "4295901928de95dbc352ea0ab5d7d5b22e2983932408a6634ce773e3e143acc5",
+      "bytes": 2605
+    },
+    {
+      "source": "ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/mnist_sdon/optical.py",
+      "destination": "snapshots/workspace/ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/mnist_sdon/optical.py",
+      "sha256": "e409b51e6e06c8902b5a3f8315cd805e09ca06e18b3f0521039f9a73750a0f6a",
+      "bytes": 17710
+    },
+    {
+      "source": "ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/mnist_sdon/optical_classifier.py",
+      "destination": "snapshots/workspace/ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/mnist_sdon/optical_classifier.py",
+      "sha256": "85d705d980001a96e887039b1efbbeb1dd97a4c21187d084ca5adc017eb69be4",
+      "bytes": 6357
+    },
+    {
+      "source": "ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/mnist_sdon/reporting.py",
+      "destination": "snapshots/workspace/ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/mnist_sdon/reporting.py",
+      "sha256": "4153a43756e03ffce2909b78bbb80392ed85b38722aa4d3ef07def4878c3f4c9",
+      "bytes": 5389
+    },
+    {
+      "source": "ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/mnist_sdon/training.py",
+      "destination": "snapshots/workspace/ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/mnist_sdon/training.py",
+      "sha256": "512fa87233c95edd6b0fa4ae72a0a58e4ac551fd23589bb710420142a17eb362",
+      "bytes": 20827
+    },
+    {
+      "source": "ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/__init__.py",
+      "destination": "snapshots/workspace/ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/__init__.py",
+      "sha256": "85c600f64e4d5199057e3ed0c868ec3c435ab63b308dad4014c83cfa9bb57b39",
+      "bytes": 63
+    },
+    {
+      "source": "ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/calibration/__init__.py",
+      "destination": "snapshots/workspace/ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/calibration/__init__.py",
+      "sha256": "3db04107da4986147f4d50d41f0006c9c224f2f1e1d953dcb8c9bc0a6c0423b2",
+      "bytes": 539
+    },
+    {
+      "source": "ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/calibration/alignment.py",
+      "destination": "snapshots/workspace/ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/calibration/alignment.py",
+      "sha256": "39c25b2ca97db666eddb69864d62dec45326763a2ca52d86dff471b5239895c5",
+      "bytes": 50113
+    },
+    {
+      "source": "ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/calibration/axial.py",
+      "destination": "snapshots/workspace/ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/calibration/axial.py",
+      "sha256": "9ac7cd6363cd79866ddf548521040b18a88e728e64f63a14e6771c26aa6ab227",
+      "bytes": 33150
+    },
+    {
+      "source": "ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/calibration/intensity.py",
+      "destination": "snapshots/workspace/ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/calibration/intensity.py",
+      "sha256": "fc20ac306828d4cd1e0d3c1f8fa67072df217307e3fa5a2eddb72169229c0082",
+      "bytes": 10614
+    },
+    {
+      "source": "ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/calibration/patterns.py",
+      "destination": "snapshots/workspace/ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/calibration/patterns.py",
+      "sha256": "3a22a22b74d92baaba9cae66d89f5919db9cae36e06298aceecb2f5d25d41469",
+      "bytes": 6682
+    },
+    {
+      "source": "ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/calibration/roi.py",
+      "destination": "snapshots/workspace/ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/calibration/roi.py",
+      "sha256": "c335194d8aa258a12378c2aac25f725488582908ee0510fd88ba7aaeb682caeb",
+      "bytes": 11252
+    },
+    {
+      "source": "ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/calibration/slm_check.py",
+      "destination": "snapshots/workspace/ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/calibration/slm_check.py",
+      "sha256": "93b32ff2b47d3872dfeb3a9e618ed23c22c1d4a478c75305139ceae26cfbe1f6",
+      "bytes": 13102
+    },
+    {
+      "source": "ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/calibration/weight_link.py",
+      "destination": "snapshots/workspace/ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/calibration/weight_link.py",
+      "sha256": "2b008950bac76a8831ca105105401ba1d8ab5fd9acec52d3d7f6d4743159c9e3",
+      "bytes": 30302
+    },
+    {
+      "source": "ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/config.py",
+      "destination": "snapshots/workspace/ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/config.py",
+      "sha256": "515d608c6a4d00d2a78e1b2863010bf250bf5626b98a638481700fe64bc13248",
+      "bytes": 9414
+    },
+    {
+      "source": "ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/hardware/__init__.py",
+      "destination": "snapshots/workspace/ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/hardware/__init__.py",
+      "sha256": "d3aea9a94862155977a2167e983964d3d946942b010dd9b1f3f9bdbb3f25fc57",
+      "bytes": 137
+    },
+    {
+      "source": "ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/hardware/display_timing.py",
+      "destination": "snapshots/workspace/ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/hardware/display_timing.py",
+      "sha256": "7fc4420fe3cc772160368b4e50d1d5dd1bd1a4ce4988f620cd44f4fc2fba3723",
+      "bytes": 8398
+    },
+    {
+      "source": "ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/hardware/flir_camera.py",
+      "destination": "snapshots/workspace/ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/hardware/flir_camera.py",
+      "sha256": "594c35dcbbae88d4f5c51c604427dceae57396d5b4353195da4290583639232a",
+      "bytes": 20448
+    },
+    {
+      "source": "ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/hardware/manager.py",
+      "destination": "snapshots/workspace/ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/hardware/manager.py",
+      "sha256": "2707f0fb712af1475f347fbb0f2d808d55e90745eb2de3d816a361688e92489f",
+      "bytes": 74376
+    },
+    {
+      "source": "ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/hardware/modulator.py",
+      "destination": "snapshots/workspace/ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/hardware/modulator.py",
+      "sha256": "999db5c64c0411fc91e9658f4f96935ed600862492c1d76708e9a07a91f0ed6c",
+      "bytes": 8130
+    },
+    {
+      "source": "ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/simulation.py",
+      "destination": "snapshots/workspace/ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/simulation.py",
+      "sha256": "1ea543145fc814f0f5c12d2345ee8c992fac85a42dc6f795a193834369d9dc4c",
+      "bytes": 5364
+    },
+    {
+      "source": "ballplate_minframes_optical_ppo/fewframe_model.py",
+      "destination": "snapshots/workspace/ballplate_minframes_optical_ppo/fewframe_model.py",
+      "sha256": "2d5e9bc01687d033ed02daf33527d3da3a4bf5bbce7ef671b1292ef58045074b",
+      "bytes": 5797
+    },
+    {
+      "source": "ballplate_minframes_optical_ppo/fewframe_runtime.py",
+      "destination": "snapshots/workspace/ballplate_minframes_optical_ppo/fewframe_runtime.py",
+      "sha256": "c65399c8e9cc88bef905caaa9c4271b7f76ea73d93d7a2c934c59dcc36482654",
+      "bytes": 663
+    },
+    {
+      "source": "ballplate_optical_actor_ppo/branch_runtime.py",
+      "destination": "snapshots/workspace/ballplate_optical_actor_ppo/branch_runtime.py",
+      "sha256": "2b4ea3dca49d4de80549dd9b030258ace7cfe617802ceae70d7fba58f556055c",
+      "bytes": 3290
+    },
+    {
+      "source": "ballplate_optical_diffraction_ppo/config.py",
+      "destination": "snapshots/workspace/ballplate_optical_diffraction_ppo/config.py",
+      "sha256": "6af104511eb1e21e5290efd926e4d7378dacd1fd6dd92860a1cc9802ad950b96",
+      "bytes": 1537
+    },
+    {
+      "source": "ballplate_optical_diffraction_ppo/dashboard/acquisition.py",
+      "destination": "snapshots/workspace/ballplate_optical_diffraction_ppo/dashboard/acquisition.py",
+      "sha256": "74af147655cc01869e32ccf19794aac14d65f0a33637b36f01ce103accca5450",
+      "bytes": 5795
+    },
+    {
+      "source": "ballplate_optical_diffraction_ppo/dashboard/interfaces.py",
+      "destination": "snapshots/workspace/ballplate_optical_diffraction_ppo/dashboard/interfaces.py",
+      "sha256": "b7eaa441b6734db5cdeb1bd5d0e7e67ce403dd623dd3ded177fe9cc19995e10f",
+      "bytes": 1732
+    },
+    {
+      "source": "ballplate_optical_diffraction_ppo/dashboard/session.py",
+      "destination": "snapshots/workspace/ballplate_optical_diffraction_ppo/dashboard/session.py",
+      "sha256": "5ad57a6858001daf9064e5753a7d3bd90ab81f8595f2cfc40b1c8756dd091756",
+      "bytes": 12289
+    },
+    {
+      "source": "ballplate_optical_diffraction_ppo/dashboard/widgets.py",
+      "destination": "snapshots/workspace/ballplate_optical_diffraction_ppo/dashboard/widgets.py",
+      "sha256": "789e8ba58928d798bf80fed9e060c91c5273236a2959b895dabdbe69a0877182",
+      "bytes": 3502
+    },
+    {
+      "source": "ballplate_optical_diffraction_ppo/env/ball_camera.py",
+      "destination": "snapshots/workspace/ballplate_optical_diffraction_ppo/env/ball_camera.py",
+      "sha256": "751e781946be72f3656027e58d138daa07c16dbc683cde3024aaf32780b0ab32",
+      "bytes": 1728
+    },
+    {
+      "source": "ballplate_optical_diffraction_ppo/env/ballplate_env.py",
+      "destination": "snapshots/workspace/ballplate_optical_diffraction_ppo/env/ballplate_env.py",
+      "sha256": "61b882e601441500793addce02bc72eb6fcc0d4668af0eb9d4e3e1a67b79cc42",
+      "bytes": 4379
+    },
+    {
+      "source": "ballplate_optical_diffraction_ppo/env/reward.py",
+      "destination": "snapshots/workspace/ballplate_optical_diffraction_ppo/env/reward.py",
+      "sha256": "d7cd0a1cca3858306e8377d9262444c6b61f2834a64104e6a9e4fe81ddbc6b70",
+      "bytes": 3919
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E017_restart_20261024_1/extension_00_preview.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E017_restart_20261024_1/extension_00_preview.py",
+      "sha256": "e6de02aa3a9dbd33ccb6e7d78d8a87d39e21ded0dfdc7b2ee4e440d563a590a5",
+      "bytes": 19830
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E017_restart_20261024_1/extension_01_filtering.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E017_restart_20261024_1/extension_01_filtering.py",
+      "sha256": "b1974909b7639fd0f4ff3e638e51197674a1dddca619c6a0c39fc5b976365fc7",
+      "bytes": 22109
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E017_restart_20261024_1/extension_02_exposure.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E017_restart_20261024_1/extension_02_exposure.py",
+      "sha256": "1e09470fd5ee99b691ad56e2d674bf5a7f41cec18f5abfb54c643f5ae3d25cee",
+      "bytes": 30208
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E017_restart_20261024_1/extension_03_display.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E017_restart_20261024_1/extension_03_display.py",
+      "sha256": "a5e8765f2eb0b2bf63e9ecc034357a96c0550eb3bd2c35d948b0310021e2c0eb",
+      "bytes": 16469
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E017_restart_20261024_1/extension_04_preview_restart.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E017_restart_20261024_1/extension_04_preview_restart.py",
+      "sha256": "d0d2d54c3e347d5737e94943e2fc40a158a2cec0542aec24b38b557f6489dc06",
+      "bytes": 27151
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E017_restart_20261024_1/preparer_source.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E017_restart_20261024_1/preparer_source.py",
+      "sha256": "d0d2d54c3e347d5737e94943e2fc40a158a2cec0542aec24b38b557f6489dc06",
+      "bytes": 27151
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E029_native_crash_recovery_20261024_1/native_buttons.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E029_native_crash_recovery_20261024_1/native_buttons.py",
+      "sha256": "a5c3c7acf9618422f364a602653e02536bb12a0c34497f18455eb18e33d4330d",
+      "bytes": 11252
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E031_trigger_standby_off_20261024_1/approved_off.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E031_trigger_standby_off_20261024_1/approved_off.py",
+      "sha256": "236248342640f6ec702819f18faabd0068b0db09a82aff59ef236f3276092d4a",
+      "bytes": 6605
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E031_trigger_standby_off_20261024_1/run.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E031_trigger_standby_off_20261024_1/run.py",
+      "sha256": "15ee5e16b69c8b23cde4dbe3f1e844840afb250c9f2f9edc58117cda9fce4526",
+      "bytes": 12585
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E031_trigger_standby_off_20261024_1/verify_postconnect.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E031_trigger_standby_off_20261024_1/verify_postconnect.py",
+      "sha256": "ece4d46e346324286afa8105261d60694835fad6068006991180c11e60f8db7e",
+      "bytes": 7816
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E038_profile1000_gain11_20261025_1/provenance/current_controls.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E038_profile1000_gain11_20261025_1/provenance/current_controls.py",
+      "sha256": "1d44aa9a6c9e0f2791635bc0c503786db4f0d9fb848797296d75c3145027cf89",
+      "bytes": 10740
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E040_temporal_preview_20261025_1/controls.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E040_temporal_preview_20261025_1/controls.py",
+      "sha256": "2eaf94d666b51db9bd29aaedbbcfe797f6190f2a0da8b26231000ce24e7029c3",
+      "bytes": 7736
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E045_dense_state_sampling_20261025_1/contract.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E045_dense_state_sampling_20261025_1/contract.py",
+      "sha256": "a6801a88ab83a79359cf2e7d15431443fb1a9a0986c452a5d0a2f1bb0f2772f5",
+      "bytes": 11163
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E045_dense_state_sampling_20261025_1/lifecycle.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E045_dense_state_sampling_20261025_1/lifecycle.py",
+      "sha256": "db6431f676fb6b2bf4b05be6586c1d614d6b25fac666ca92cd5e4b36894de19b",
+      "bytes": 21387
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E045_dense_state_sampling_20261025_1/recovery.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E045_dense_state_sampling_20261025_1/recovery.py",
+      "sha256": "628e3087448186ac3c792a447e7671f073bc949ff60b5be11ff61c19b1513d32",
+      "bytes": 13340
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E045_dense_state_sampling_20261025_1/retention.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E045_dense_state_sampling_20261025_1/retention.py",
+      "sha256": "841a0fe6e2be34e66a1a0551acebfcce1a355cf9a17020b5c2a7ad4eeafcf09a",
+      "bytes": 20676
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E045_dense_state_sampling_20261025_1/run.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E045_dense_state_sampling_20261025_1/run.py",
+      "sha256": "45d1bac343890db2bff543e3db00c3941cb9421c410bc0e19c0a76a4becf5028",
+      "bytes": 12641
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E045_dense_state_sampling_20261025_1/test_contract.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E045_dense_state_sampling_20261025_1/test_contract.py",
+      "sha256": "d67fe29225d9fbb1544547039f0ecefafb9eda2d42b359a120a7f943d9259035",
+      "bytes": 8001
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E045_dense_state_sampling_20261025_1/test_lifecycle.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E045_dense_state_sampling_20261025_1/test_lifecycle.py",
+      "sha256": "7ffc1849c5505a06334746e12db96ba3b69cf71782a6e10e22898b991e19e0c6",
+      "bytes": 14876
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E045_dense_state_sampling_20261025_1/test_recovery.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E045_dense_state_sampling_20261025_1/test_recovery.py",
+      "sha256": "3dca5434511208fc2ec9a0aab4aa32da7e13b1dbf5886cbc0341a4cfde45d2f9",
+      "bytes": 13066
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E045_dense_state_sampling_20261025_1/test_retention.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E045_dense_state_sampling_20261025_1/test_retention.py",
+      "sha256": "0f6162a0e9482be94858d7076fe5fdb12f5c9a8b034fc75fd48f895e770098ef",
+      "bytes": 13746
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E045_dense_state_sampling_20261025_1/test_run.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E045_dense_state_sampling_20261025_1/test_run.py",
+      "sha256": "4e522647b454b74066f27258fdc855e730a5266aeed5efcf7eaf0eb308ff0a4a",
+      "bytes": 5235
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E047_region_overlay_20261025_1/prepare_restart.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E047_region_overlay_20261025_1/prepare_restart.py",
+      "sha256": "bc3f6ebbe9d8ae1aab0fa207c582414ea947238ec4c4b904d1aaa99192701e11",
+      "bytes": 12717
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E047_region_overlay_20261025_1/run.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E047_region_overlay_20261025_1/run.py",
+      "sha256": "1331475d0ca4f2121ff0e5c10f7b76ecbcec7b96242f3d0fbdf44da0434d8ddf",
+      "bytes": 12335
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E048_stability_page_20261025_1/run.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E048_stability_page_20261025_1/run.py",
+      "sha256": "cdc0fcefda83142d3eb2560d209ede55ca2a8ae19a8395d1eed60a86b7612d4e",
+      "bytes": 8174
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E048_stability_page_20261025_1/switch.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E048_stability_page_20261025_1/switch.py",
+      "sha256": "f99b4569225628036b099c6f7c68622d906c1317e4831a25a0f7c0d2ee39587d",
+      "bytes": 8817
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E050_all8_gui_20261026_1/run.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E050_all8_gui_20261026_1/run.py",
+      "sha256": "a517a8499a1b6937e3483af91100c495b44d3c5412ce4d86723391681b733c4e",
+      "bytes": 10091
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E050_all8_gui_20261026_1/staged/optical_lab/stability.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E050_all8_gui_20261026_1/staged/optical_lab/stability.py",
+      "sha256": "d5cecc267ca30b476161f873afd30bb0c4203dd43ecf1f5b556b911807ecf935",
+      "bytes": 15914
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E050_all8_gui_20261026_1/staged/optical_lab/stability_gui.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E050_all8_gui_20261026_1/staged/optical_lab/stability_gui.py",
+      "sha256": "03dd1af7ed7299d1fd6c32753b3b46f94e1aa9db698ee4445fee1feade9fc269",
+      "bytes": 29791
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E050_all8_gui_20261026_1/switch.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E050_all8_gui_20261026_1/switch.py",
+      "sha256": "0ecf03dc2efd6287072b8aa46e19ea64883c29a28588aa70b80772e4be83e5e0",
+      "bytes": 9779
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E051_brightness_warning_20261026_1/run.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E051_brightness_warning_20261026_1/run.py",
+      "sha256": "2c7de1eb70e890e12a534e6ab3db4ca4922e13b6247269fcd61fc64c9eb4c0fd",
+      "bytes": 11813
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E051_brightness_warning_20261026_1/staged/optical_lab/stability.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E051_brightness_warning_20261026_1/staged/optical_lab/stability.py",
+      "sha256": "b421b83b67d1ff8ed8f02174b595a1a8c81b71cad25baa5a660a1b8bab19048b",
+      "bytes": 19963
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E051_brightness_warning_20261026_1/staged/optical_lab/stability_gui.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E051_brightness_warning_20261026_1/staged/optical_lab/stability_gui.py",
+      "sha256": "ee1eafa6dd7466c0a0371e73a6246d19a1bc748494c67600f0f7bdf4014707b4",
+      "bytes": 31100
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E051_brightness_warning_20261026_1/staged/optical_lab/state_sampling.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E051_brightness_warning_20261026_1/staged/optical_lab/state_sampling.py",
+      "sha256": "303430bea73054aa02776ecc680b82bd291b51239fd399ce272d14799e559c80",
+      "bytes": 21726
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E051_brightness_warning_20261026_1/switch.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E051_brightness_warning_20261026_1/switch.py",
+      "sha256": "18363ab2930414af01ad3bdfec3cfdddc2f38101280c79af283a6721691abc67",
+      "bytes": 12011
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E052_n60_crash_recovery_20261026_1/run.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E052_n60_crash_recovery_20261026_1/run.py",
+      "sha256": "dc949d97325e028f54804d4a9ed5dd830903376b71162fedcdb2bc9bd7b9e257",
+      "bytes": 10984
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E053_raw_workbench_20261026_1/run.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E053_raw_workbench_20261026_1/run.py",
+      "sha256": "925184ba784e3076bdff859c365764338d891fa62a9c0c75b515644a685cc575",
+      "bytes": 6429
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E053_raw_workbench_20261026_1/switch.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E053_raw_workbench_20261026_1/switch.py",
+      "sha256": "4b86148d474e797c24703a4f8e26ad45b915c1640b40ca71a20a7f3eb43752cf",
+      "bytes": 14673
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E053_raw_workbench_20261026_1/workbench.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E053_raw_workbench_20261026_1/workbench.py",
+      "sha256": "2668ff7b0ed3d5dc46ce9a3e40a6015c2a43a676381d4d9f89ae463269f12a45",
+      "bytes": 4573
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E054_state_validation_20261026_1/catalog.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E054_state_validation_20261026_1/catalog.py",
+      "sha256": "807242ba69448a94956653cc5208ece24e497ffc6332af5a8bab985dce28626d",
+      "bytes": 7479
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E054_state_validation_20261026_1/launch.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E054_state_validation_20261026_1/launch.py",
+      "sha256": "9668fb646c35be40472358b4f579633b3e7fd9e9b02fd2387bc8f13da087170d",
+      "bytes": 2155
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E054_state_validation_20261026_1/run.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E054_state_validation_20261026_1/run.py",
+      "sha256": "e63acc19f38a676be2615da5c2f2ed654a2e5a0fe3d972222914cb71a5c053d7",
+      "bytes": 6719
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E054_state_validation_20261026_1/switch.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E054_state_validation_20261026_1/switch.py",
+      "sha256": "a32d5c678219ee3434bfa995ac61e4a4859c2b2e315c3758e1fb6edaf72120de",
+      "bytes": 14768
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E067_three_slm_20261026_1/client_compat.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E067_three_slm_20261026_1/client_compat.py",
+      "sha256": "ae11708fe6ed299a03f12adef24a174251837a8961a2bdcb2ea4439d8ddc03ec",
+      "bytes": 981
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E068_sampling_order_20261026_1/adapter.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E068_sampling_order_20261026_1/adapter.py",
+      "sha256": "7e0edcddb710a39f3ae3ae274ebe16ba1095207099ff0f07640a79642c32dcbb",
+      "bytes": 22759
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E068_sampling_order_20261026_1/launch.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E068_sampling_order_20261026_1/launch.py",
+      "sha256": "b860d936bc6faddfabffcfe23a5de43a3bb02d27782dbbdafcf3b8d0b296c7fa",
+      "bytes": 2159
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E068_sampling_order_20261026_1/run.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E068_sampling_order_20261026_1/run.py",
+      "sha256": "f3419a0af3078a9f7de9c3673d1a07b43d85c7305962298c8c62a714fc7e08dc",
+      "bytes": 6918
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E068_sampling_order_20261026_1/switch.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E068_sampling_order_20261026_1/switch.py",
+      "sha256": "f131abc464df378c7f967a8cc8dfd994909de58f3281f178e4db91b465f6868f",
+      "bytes": 15775
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E068_sampling_order_20261026_1/test_order.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E068_sampling_order_20261026_1/test_order.py",
+      "sha256": "cbc51518da90c968eccee62c305499c5f926b100dd800aa944ae169656e7b1ba",
+      "bytes": 2533
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E069_actual_display_binding_20261026_1/display_binding.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E069_actual_display_binding_20261026_1/display_binding.py",
+      "sha256": "0c12fe5abb119faade870eb7f49dbf9cd1564f3bc7e13bbbb5cd93a84f603d9e",
+      "bytes": 2796
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E069_actual_display_binding_20261026_1/recover.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E069_actual_display_binding_20261026_1/recover.py",
+      "sha256": "0e8f381d12663d5eb2452da1fbb07bfd341e59110016e162e6b462ac4afd5668",
+      "bytes": 7070
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E069_actual_display_binding_20261026_1/run.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E069_actual_display_binding_20261026_1/run.py",
+      "sha256": "cbcf370c65069d5a6183b0567b909e066e9ff73c7d1c0eb49c2ab74e4d1b5ff1",
+      "bytes": 4916
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E069_actual_display_binding_20261026_1/test_binding.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E069_actual_display_binding_20261026_1/test_binding.py",
+      "sha256": "7a0d53a759aae2d631bda1d0405af47032d347598b82ec26eb0dee36837f5c7b",
+      "bytes": 3573
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E071_stability_reference_ui_20261026_1/run.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E071_stability_reference_ui_20261026_1/run.py",
+      "sha256": "3d3fbd7b0bdb52125a2cb78cd56aad72bd1b984b567f4d365d45f78d640b2d17",
+      "bytes": 10434
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E071_stability_reference_ui_20261026_1/staged/optical_lab/stability.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E071_stability_reference_ui_20261026_1/staged/optical_lab/stability.py",
+      "sha256": "1d717ec4b3b7661ec1f5efa6f0ee87640b88bafd958931cdf4d20d60cd5b97ee",
+      "bytes": 39054
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E071_stability_reference_ui_20261026_1/staged/optical_lab/stability_gui.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E071_stability_reference_ui_20261026_1/staged/optical_lab/stability_gui.py",
+      "sha256": "0cdc6c7d0901fe6cb1b5d00fa966eea574cae93fbab39b3888415958185a0c34",
+      "bytes": 43503
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E071_stability_reference_ui_20261026_1/switch.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E071_stability_reference_ui_20261026_1/switch.py",
+      "sha256": "f1076b402b37caa20e1746fa21dd6ba4b4f775b10d70ba2006016d5063d846aa",
+      "bytes": 15781
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E072_ball_size_20261026_1/catalog.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E072_ball_size_20261026_1/catalog.py",
+      "sha256": "dd27950b4c77ab545d291fb149b7a89d239a5ab2addfdc8d65168fbc867d7e29",
+      "bytes": 19409
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E072_ball_size_20261026_1/run.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E072_ball_size_20261026_1/run.py",
+      "sha256": "9a858d8e99b29bec016fea5c47963cb99c62ad1ddf81aba741ab9fd4fa643958",
+      "bytes": 13047
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E072_ball_size_20261026_1/staged/optical_lab/stability.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E072_ball_size_20261026_1/staged/optical_lab/stability.py",
+      "sha256": "f523a07ca5bb4ea9c12ce5f9d543ab865972b18b48d4c8567ed3d6bdaa2edb16",
+      "bytes": 41193
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E072_ball_size_20261026_1/staged/optical_lab/stability_gui.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E072_ball_size_20261026_1/staged/optical_lab/stability_gui.py",
+      "sha256": "8b74adbdf18fba0fb7b592f70c7ae433f8f4d2e96db88e5d400128decf2641ca",
+      "bytes": 45012
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E072_ball_size_20261026_1/switch.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E072_ball_size_20261026_1/switch.py",
+      "sha256": "1d82a85da9aad35528fc266e66ad407ecd4db28ee668cc9aa30d5cb3da0ad16b",
+      "bytes": 20661
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E074_dmd1920_rollback_20261026_1/run.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E074_dmd1920_rollback_20261026_1/run.py",
+      "sha256": "4c39fdf9e0f17c87994ef6f4c6d9787eb77d0ddf9ed112c4eed1e733fd746d94",
+      "bytes": 9917
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E075_spatial_repair_20261027_1/alignment.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E075_spatial_repair_20261027_1/alignment.py",
+      "sha256": "9549e7cf5cf24bff140a0c455ecfa0bb7f54f626756ca1d8fefe8284027d5a66",
+      "bytes": 9260
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E075_spatial_repair_20261027_1/operate.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E075_spatial_repair_20261027_1/operate.py",
+      "sha256": "8c383e01dd508235a60f3b5ba6aa5cb9276ac0ac57c5d0b9218c79e6c17fa025",
+      "bytes": 15979
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E075_spatial_repair_20261027_1/run.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E075_spatial_repair_20261027_1/run.py",
+      "sha256": "47c770a815ff63d8bb34d0012a5fc32a3366d5b9d152fd333204d4373526ab2e",
+      "bytes": 5471
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E075_spatial_repair_20261027_1/staged/optical_lab/display.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E075_spatial_repair_20261027_1/staged/optical_lab/display.py",
+      "sha256": "11df5dacedf49168d9a79c188436979cb225c1cda58abb3ad6f11b40615060e4",
+      "bytes": 20826
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E076_dmd_scale_20261027_1/lifecycle.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E076_dmd_scale_20261027_1/lifecycle.py",
+      "sha256": "2e02e125ff6a2242b300bd79d48a78cac43267680de8237e3569f8d0c9799cbe",
+      "bytes": 11200
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E076_dmd_scale_20261027_1/run.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E076_dmd_scale_20261027_1/run.py",
+      "sha256": "eb2992d823dc4a050c87630bc81b17707143b65165253b4cc939ad21097e2385",
+      "bytes": 6884
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E076_dmd_scale_20261027_1/scaling.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E076_dmd_scale_20261027_1/scaling.py",
+      "sha256": "17066df166b533a619195f91d119b79a408a733f1b1737fd8efd00d43525fe21",
+      "bytes": 10584
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E077_stability_simplify_20261027_1/lifecycle.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E077_stability_simplify_20261027_1/lifecycle.py",
+      "sha256": "e90d4da59fd44ca8f5c38cbce8515f6c3f6ce58038177e877393cb7c4e9593f1",
+      "bytes": 10662
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E077_stability_simplify_20261027_1/run.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E077_stability_simplify_20261027_1/run.py",
+      "sha256": "a5382b2e98444bd32349ed3a81676e1283e6d990cbf9ff125368aa21f3bae318",
+      "bytes": 15417
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E077_stability_simplify_20261027_1/scaling.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E077_stability_simplify_20261027_1/scaling.py",
+      "sha256": "475da58ec56b9a436d4e4bcd18fd611dd3419a30532f989b9c6cb5e6b097c0a3",
+      "bytes": 9870
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E077_stability_simplify_20261027_1/staged/optical_lab/region_overlay.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E077_stability_simplify_20261027_1/staged/optical_lab/region_overlay.py",
+      "sha256": "b6a04177bd13d794a0ad4f595d0f4825a9aaf68c53cf1840c098b87c2ef78732",
+      "bytes": 11621
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E077_stability_simplify_20261027_1/staged/optical_lab/stability.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E077_stability_simplify_20261027_1/staged/optical_lab/stability.py",
+      "sha256": "6eb3db20d5915a30698b9a8103b158cba9ee7e7d6f913829299f318c153e99cf",
+      "bytes": 39839
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E077_stability_simplify_20261027_1/staged/optical_lab/stability_gui.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E077_stability_simplify_20261027_1/staged/optical_lab/stability_gui.py",
+      "sha256": "2ddae51023b7e2a3c7322284a96d1d2b1c38249577ac5cdc36a46551663a37a5",
+      "bytes": 47253
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E077_stability_simplify_20261027_1/staged/optical_lab/state_sampling.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E077_stability_simplify_20261027_1/staged/optical_lab/state_sampling.py",
+      "sha256": "aef2a00d45a483ef7d8e00163e2b3f88f1f0e6173bd40e571647eff765593f8c",
+      "bytes": 21887
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E077_stability_simplify_20261027_1/staged/optical_lab/state_sampling_gui.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E077_stability_simplify_20261027_1/staged/optical_lab/state_sampling_gui.py",
+      "sha256": "c09d625aeff38e0d830baaf7b6fa4b5d3d154eebf928f836800c4dbbc67d6ff0",
+      "bytes": 23032
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E078_shared_main_20261027_1/catalog.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E078_shared_main_20261027_1/catalog.py",
+      "sha256": "4d1170760543d9c9081940d9d00b91bc5f70181a2814272b549d2efcc3745330",
+      "bytes": 18711
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E078_shared_main_20261027_1/lifecycle.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E078_shared_main_20261027_1/lifecycle.py",
+      "sha256": "8af45962105c3d392e1e1eb06b0bc2aa550b4b06c5a6bf12c4310207a568c5fc",
+      "bytes": 10102
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E078_shared_main_20261027_1/run.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E078_shared_main_20261027_1/run.py",
+      "sha256": "d7c560d1e56bacd28d9ccc659e14f98a6bbb80c98e1e5f9416a7dc38f191e67e",
+      "bytes": 15432
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E078_shared_main_20261027_1/staged/optical_lab/stability.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E078_shared_main_20261027_1/staged/optical_lab/stability.py",
+      "sha256": "b2d92e15c4d2a9181c5e28c53f12bec8f680572fd22dd60444c656470edcdc3c",
+      "bytes": 37897
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E078_shared_main_20261027_1/staged/optical_lab/stability_gui.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E078_shared_main_20261027_1/staged/optical_lab/stability_gui.py",
+      "sha256": "e82908c133aa70b228a25329f2fca306d6f6144ceee1cae8c0f371dbd4eaa521",
+      "bytes": 37871
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E078_shared_main_20261027_1/verify_startup.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E078_shared_main_20261027_1/verify_startup.py",
+      "sha256": "efbc5017d69bcf7d25af11b1856c1e3ac202e0b0ae4286d960926f5bafbab614",
+      "bytes": 6451
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E078_shared_main_20261027_1/workbench.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E078_shared_main_20261027_1/workbench.py",
+      "sha256": "7f126277d8b2534a95ac991acf033c4c91c5a7bbad350238441aa91bdb703793",
+      "bytes": 4188
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E079_shared_filter_20261027_1/check_visible.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E079_shared_filter_20261027_1/check_visible.py",
+      "sha256": "4e264fd07059b69d58249299ac0439f6dd065a8a05cfe099675a2a73018d9633",
+      "bytes": 3033
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E079_shared_filter_20261027_1/lifecycle.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E079_shared_filter_20261027_1/lifecycle.py",
+      "sha256": "3ccae66b30dcfad1d7acf931741c5ab8ec0ca6dc94ea0616cfceb692c05dcbcd",
+      "bytes": 14637
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E079_shared_filter_20261027_1/run.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E079_shared_filter_20261027_1/run.py",
+      "sha256": "8adbb7fdb19a24d9e74ebb8c27d51e0a984ea5c1f5566cb529c9ba831d07e4dd",
+      "bytes": 16967
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E079_shared_filter_20261027_1/staged/optical_lab/display.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E079_shared_filter_20261027_1/staged/optical_lab/display.py",
+      "sha256": "3a80a86e70fa66b70ceb934c2a0e8cb14f10c921f93d797af159b5b5c7003f5a",
+      "bytes": 22311
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E079_shared_filter_20261027_1/staged/optical_lab/effective_frame.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E079_shared_filter_20261027_1/staged/optical_lab/effective_frame.py",
+      "sha256": "927d0ad32358b7931241165bea1ac9ad5546b6ef53a937f6c6221fde9cf768f6",
+      "bytes": 8592
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E079_shared_filter_20261027_1/staged/optical_lab/stability.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E079_shared_filter_20261027_1/staged/optical_lab/stability.py",
+      "sha256": "c9af07a82a8db456cdc8d1c9f5ca19ece3c315d4f16b077241559478277644c7",
+      "bytes": 39495
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E079_shared_filter_20261027_1/staged/optical_lab/stability_gui.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E079_shared_filter_20261027_1/staged/optical_lab/stability_gui.py",
+      "sha256": "f434d96fea0205b92c27cf4403cb785f26f560e4738e4d01370799733db55760",
+      "bytes": 39534
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E079_shared_filter_20261027_1/verify_startup.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E079_shared_filter_20261027_1/verify_startup.py",
+      "sha256": "5ae1c4ffe25aaa10f1c89bfd99dd8c753af60f0d13cbc49e235df4efab9801fd",
+      "bytes": 6457
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E080_ball_input_20261027_1/catalog.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E080_ball_input_20261027_1/catalog.py",
+      "sha256": "54ede982be904bdb946bad8f4438f596af7b509417c2f2018cc961a8f9c2fec8",
+      "bytes": 28007
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E080_ball_input_20261027_1/lifecycle.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E080_ball_input_20261027_1/lifecycle.py",
+      "sha256": "fee0b4cec3545067d21aab23c97fff518942967f1a4531f99718a076b05b3d16",
+      "bytes": 16886
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E080_ball_input_20261027_1/run.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E080_ball_input_20261027_1/run.py",
+      "sha256": "8bb590ea5958fdc90cfa429ca39d247caf543526eed056f1fac23434e56f51e2",
+      "bytes": 17262
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E080_ball_input_20261027_1/staged/optical_lab/stability.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E080_ball_input_20261027_1/staged/optical_lab/stability.py",
+      "sha256": "1a20b44be9b9710c22a352ba5ad381ef719d791bcf932e4649c0f88000e43fdc",
+      "bytes": 39708
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E080_ball_input_20261027_1/verify_startup.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E080_ball_input_20261027_1/verify_startup.py",
+      "sha256": "51ebfd68339860394b79168a97c7ce539c46c782d9b09682681d2703f0ec819e",
+      "bytes": 6459
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E081_readout_regions_20261028_1/lifecycle.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E081_readout_regions_20261028_1/lifecycle.py",
+      "sha256": "a5c9c9ca369f3b22a81b2246ccd1eabf6d475b47ff195529b86d4afa15f2b39c",
+      "bytes": 15390
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E081_readout_regions_20261028_1/run.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E081_readout_regions_20261028_1/run.py",
+      "sha256": "80d30c45380a6faf84c53814f7b7131044651f3a99f98314bc3d751a413b4b7f",
+      "bytes": 17690
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E081_readout_regions_20261028_1/staged/optical_lab/effective_frame.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E081_readout_regions_20261028_1/staged/optical_lab/effective_frame.py",
+      "sha256": "3caeff226af7b319ca9bf5984c59f97bfba018a433dc003fe16e28f507a8baa9",
+      "bytes": 8676
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E081_readout_regions_20261028_1/staged/optical_lab/region_overlay.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E081_readout_regions_20261028_1/staged/optical_lab/region_overlay.py",
+      "sha256": "ac22304cfef258a5340dea99d1bdc9b2fb955641223074ee6e049a433c846f86",
+      "bytes": 15379
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E081_readout_regions_20261028_1/staged/optical_lab/stability.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E081_readout_regions_20261028_1/staged/optical_lab/stability.py",
+      "sha256": "a43268983495ad6fc7048842081fca4ec5b25f5579ffccfc97499d90d0fbc2ef",
+      "bytes": 42225
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E081_readout_regions_20261028_1/staged/optical_lab/stability_gui.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E081_readout_regions_20261028_1/staged/optical_lab/stability_gui.py",
+      "sha256": "1188180a1e1393ae0a7e69ce545e4020689653b08b0a859fb5072186afde02bc",
+      "bytes": 41109
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E081_readout_regions_20261028_1/verify_startup.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E081_readout_regions_20261028_1/verify_startup.py",
+      "sha256": "55790c1b85975738b698d3f75405c18e11fbb43533dc556fdf6b04cac290a4a6",
+      "bytes": 6465
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/coherent_residual.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/coherent_residual.py",
+      "sha256": "8e5af658ec54fb58690e27bf890c11b958b700139c26ae1d1e65cf16b52f0c36",
+      "bytes": 21577
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/control_budget.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/control_budget.py",
+      "sha256": "fb367d67cca6cb568c123c6f5cac24759ed463744d4f68c3c8233a1ba618f36f",
+      "bytes": 11239
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/convolution_residual.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/convolution_residual.py",
+      "sha256": "144206122622e8d076d8af60f95272eafc4b37555bbe5ce30517b23de55fbddc",
+      "bytes": 10718
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/dataset.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/dataset.py",
+      "sha256": "b35e75bc9cf6a47d1b32ecf19016f57a0fa854e25a1b1d1c4e23be9938dac6e8",
+      "bytes": 10033
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/design.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/design.py",
+      "sha256": "95b71dece12d18575486e2d40adbff3d2193743410d53b9511ebafc6f69308ee",
+      "bytes": 23888
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/field_calibration.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/field_calibration.py",
+      "sha256": "63339828160d9928bb0721993a6dcb8a836d0e5fb39b1976229bbe463188bdca",
+      "bytes": 11568
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/fit.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/fit.py",
+      "sha256": "3f5d36ce9f43883da69ea7fe4648d9c6fa00c02e67c901cba556173e5a5e1a72",
+      "bytes": 17140
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/head.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/head.py",
+      "sha256": "93660c69b207f1deb4e1bd4f2e7549422fdc093f92070c55f5f28cb2d466b9e9",
+      "bytes": 14564
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/noise_model.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/noise_model.py",
+      "sha256": "3ae3699d9ee4b0b583dba8da0c95fc016ffa9867cecbf9d1fb1f0b94d991d89b",
+      "bytes": 10658
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/readout_surrogate.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/readout_surrogate.py",
+      "sha256": "bd17c2f8d277a59086ba67c9ef783a533c7f5d3d63c16a033663d9544012a1a4",
+      "bytes": 10777
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/research_report.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/research_report.py",
+      "sha256": "48d12bc3626cacb81d1239f28fda1f4ea95a043a0ec0d64a46af7a7053a2c93f",
+      "bytes": 23729
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/residual_fit.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/residual_fit.py",
+      "sha256": "57f5355cf0ea3a28c28de929b065d7edd51ed13e874c4dcd90a3afb2334318e0",
+      "bytes": 34056
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/response.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/response.py",
+      "sha256": "82caad733b19fbc2fb8c2276dacf1ef7fbf56b05af4bc3c7ce0fa101e7849c1b",
+      "bytes": 26362
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/series.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/series.py",
+      "sha256": "4e733c5ceffbb264285c8e791005329eb3bad58fe634d9e260915e08cd2b9789",
+      "bytes": 7307
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/surrogate.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/surrogate.py",
+      "sha256": "d729816095f670491e46aeec2042953ac5f500a805bba48af5a5e4b9d62fa9e6",
+      "bytes": 10093
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/test_head.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/test_head.py",
+      "sha256": "2543fde1ee9af278c9406ee1978451fd6ca01467ad80d6ec87ff8494bd895c2b",
+      "bytes": 2512
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/test_surrogate.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/test_surrogate.py",
+      "sha256": "27eca1792bcea936c512162bba132acdc5f804a58c55a2ba32c84fdbe8bc7c25",
+      "bytes": 16669
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/test_workflow.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/test_workflow.py",
+      "sha256": "53356aaa3362ae4dc9c25e57c08f34aaca6fc6ad3620ed5788b6a10e86c9ca7e",
+      "bytes": 6860
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/validate_physics.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/validate_physics.py",
+      "sha256": "746a1540d5bb651fb759abd625c070e6eb6f48e8d0ead601899bfa8c52425aac",
+      "bytes": 43656
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/workflow.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E105_rebuilt_surrogate_20261029_1/workflow.py",
+      "sha256": "58e0577ba20921ef5dac65b384e9e95eaa2c9d34946ba0a7a3257de33d9b3671",
+      "bytes": 39877
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E106_surrogate_preview_20261030_1/lifecycle.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E106_surrogate_preview_20261030_1/lifecycle.py",
+      "sha256": "db6140e9db4f12316712c4c1e08141f8a789e47300c992e4f7346319735e4769",
+      "bytes": 15083
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E106_surrogate_preview_20261030_1/model.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E106_surrogate_preview_20261030_1/model.py",
+      "sha256": "33c8fee48fb9e2ceb239ba2cc7ae9fe0c57f16740126e1edd6ef32d800a0439a",
+      "bytes": 8975
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E106_surrogate_preview_20261030_1/panel.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E106_surrogate_preview_20261030_1/panel.py",
+      "sha256": "9d7a11f92ee4b9b953517fc64976b03f08292d8a0f1c97e4f2848cd60dcd3a56",
+      "bytes": 11415
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E106_surrogate_preview_20261030_1/qa.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E106_surrogate_preview_20261030_1/qa.py",
+      "sha256": "3be29423b09afdf43c32b51c2850d7ed4d931ce722af502faaa561312d1719ca",
+      "bytes": 13130
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E106_surrogate_preview_20261030_1/run.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E106_surrogate_preview_20261030_1/run.py",
+      "sha256": "619d47202f7f05c9aaac02c7b39db40a99764082cb6c6407fe2121f58f7f633e",
+      "bytes": 5067
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E106_surrogate_preview_20261030_1/test_preview.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E106_surrogate_preview_20261030_1/test_preview.py",
+      "sha256": "a4f18aac4601d62c68c33075413790ab25d5124e01d196439553ef75292ae93e",
+      "bytes": 4125
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E107_paired_control_20261030_1/core.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E107_paired_control_20261030_1/core.py",
+      "sha256": "c9b7b8485b0a04774bc738906ded2091a3e65cb45333a1323dab05312b02dc09",
+      "bytes": 5542
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E107_paired_control_20261030_1/page.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E107_paired_control_20261030_1/page.py",
+      "sha256": "03c786bf2063c88d2ecb2d8d91dc707f193064612915890f104903c90078fe9b",
+      "bytes": 22601
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E107_paired_control_20261030_1/post_startup.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E107_paired_control_20261030_1/post_startup.py",
+      "sha256": "f18656ea387dcbd69c0c4fad5df1d865079d65555660445c33445c6623b5241e",
+      "bytes": 6495
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E107_paired_control_20261030_1/prepare.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E107_paired_control_20261030_1/prepare.py",
+      "sha256": "20387fd04c13756642e1ea6962d49f534d32e5bb46812efeef15c7db9a2bf23b",
+      "bytes": 5285
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E107_paired_control_20261030_1/qa.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E107_paired_control_20261030_1/qa.py",
+      "sha256": "c14614cc2634eefa7924d0c12747c155e9044c7faa68b37935832fd0acef8900",
+      "bytes": 10385
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E107_paired_control_20261030_1/run.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E107_paired_control_20261030_1/run.py",
+      "sha256": "b57c608a4e04db900097b7272bf07db09770b2f889472a33e5ee631ca13b4053",
+      "bytes": 5525
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E107_paired_control_20261030_1/single_step_check.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E107_paired_control_20261030_1/single_step_check.py",
+      "sha256": "94620198f642abb25225f8f1f635221beea4ce848b10bfe5019d53816b02631e",
+      "bytes": 7352
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E107_paired_control_20261030_1/switch.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E107_paired_control_20261030_1/switch.py",
+      "sha256": "d14c228aa3b1d990582170e0b95f343c0cdc7c5cdb0a893f9628ef65e0e55d5a",
+      "bytes": 11604
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E107_paired_control_20261030_1/test_flow.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E107_paired_control_20261030_1/test_flow.py",
+      "sha256": "eb16ca00c53e18723f6501922e82fb3cb917dbb16559bbac2ca518f3a782a0c4",
+      "bytes": 3847
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E107_paired_control_20261030_1/test_pair.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E107_paired_control_20261030_1/test_pair.py",
+      "sha256": "7bf759c003a6b0c67dde67e197d236b5ac41bfed12314d10ce2c37bb2c26c3fd",
+      "bytes": 5380
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E107_paired_control_20261030_1/worker.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E107_paired_control_20261030_1/worker.py",
+      "sha256": "f1ede33d1278c72fb3575ef5de81f0d0a21098887ee8e4133e5f22e5bd657bb3",
+      "bytes": 8630
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E108_paired_display_fix_20261030_1/page.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E108_paired_display_fix_20261030_1/page.py",
+      "sha256": "9bc69f2696afc72ecf4289f4a2ce2e221ab692a1b4d56f4b38ac18c447fcf63f",
+      "bytes": 22955
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E108_paired_display_fix_20261030_1/run.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E108_paired_display_fix_20261030_1/run.py",
+      "sha256": "a9366338f46a3802f252f0a82ae0368655bc92ea6456d9aee92dafbaa8077c85",
+      "bytes": 1826
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E108_paired_display_fix_20261030_1/update.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E108_paired_display_fix_20261030_1/update.py",
+      "sha256": "087ba96183c1bf33b4952205ede16bf07f0eaa724ac606a7127565ee4cf21632",
+      "bytes": 8846
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E109_hold_effective_frame_20261030_1/page.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E109_hold_effective_frame_20261030_1/page.py",
+      "sha256": "95f3305700149893ff9928f450dd3fd4460ddb783de4182a3482cd29d3a47877",
+      "bytes": 24907
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E109_hold_effective_frame_20261030_1/run.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E109_hold_effective_frame_20261030_1/run.py",
+      "sha256": "4dd4b25b44bde8b05511a398a51d74de75a36c0e04c98745fc496b122c2468d0",
+      "bytes": 2049
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E109_hold_effective_frame_20261030_1/update.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E109_hold_effective_frame_20261030_1/update.py",
+      "sha256": "7fa1f28a0b0f6bc8d0cb030dc1bc8ac1779d1738824fa268b15cad9cb7f11e5f",
+      "bytes": 10224
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E110_adjustable_settle_20261030_1/page.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E110_adjustable_settle_20261030_1/page.py",
+      "sha256": "520b9a0856a5c4190e971ed425b87a55a9f6460ec3392eac9acc0d9af0494aca",
+      "bytes": 27946
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E110_adjustable_settle_20261030_1/present.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E110_adjustable_settle_20261030_1/present.py",
+      "sha256": "aa1e41cb40d13a4648056a280b00d3811ef024369eea37db1c1e9d658d4f6770",
+      "bytes": 4179
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E110_adjustable_settle_20261030_1/qa.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E110_adjustable_settle_20261030_1/qa.py",
+      "sha256": "916a76704858cfb1d97ea26e161efa1e26abce13a39b3bfb448b44cd8982f10e",
+      "bytes": 4107
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E110_adjustable_settle_20261030_1/run.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E110_adjustable_settle_20261030_1/run.py",
+      "sha256": "ecf1dde561d159bb65196dfa28bbd0486b2fc4fbdde3e7efc9a26749a8055743",
+      "bytes": 2053
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E110_adjustable_settle_20261030_1/test_hold.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E110_adjustable_settle_20261030_1/test_hold.py",
+      "sha256": "2b4ecb98b9c75a9f87c9a595f5d114ef40afd9f8ce9b1e2cecf3c3644dae9300",
+      "bytes": 7745
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E110_adjustable_settle_20261030_1/test_settle.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E110_adjustable_settle_20261030_1/test_settle.py",
+      "sha256": "1ae3e0aa40b146e0ce89ec978dfbca93c052a0b2b27aeff94d7f7e06a3285e92",
+      "bytes": 5786
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E110_adjustable_settle_20261030_1/update.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/experiments/E110_adjustable_settle_20261030_1/update.py",
+      "sha256": "209d2a11209f6dac2c5caec0bf69197e71dcf34004ce0087666d6f9539586a45",
+      "bytes": 10251
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/__init__.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/src/optical_lab/__init__.py",
+      "sha256": "522962c33fa454fe177a5a76aacd3e09e6cc5e96fe31850808e1bf5161988a7b",
+      "bytes": 98
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/capture_timeout.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/src/optical_lab/capture_timeout.py",
+      "sha256": "c0ade3354e6001ae46bdbb7f3f03603344bf0abe14137cabec6c1a0b38e66a28",
+      "bytes": 5378
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/display.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/src/optical_lab/display.py",
+      "sha256": "04c35b26018be83791c5cf5eed3b933968cea678c9505c7cd19e222f8cb16dc5",
+      "bytes": 20534
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/exposure.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/src/optical_lab/exposure.py",
+      "sha256": "e11d682eb14254cea47e2c128cc4f3d73a69ca3285db5ff986492233f78adcf7",
+      "bytes": 30705
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/filtering.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/src/optical_lab/filtering.py",
+      "sha256": "a52b4d125de86ec10d069938b5742135469933589e21b2118d54da63405a68d7",
+      "bytes": 26009
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/legacy_gui.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/src/optical_lab/legacy_gui.py",
+      "sha256": "cf018342e9907248320299c5ef73d3538b0adbde738da0e84f7c9290a4803748",
+      "bytes": 53685
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/manual_exposure.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/src/optical_lab/manual_exposure.py",
+      "sha256": "21391efebb14bc8d1d61d0d1ec2c23b0fd344f3ad64bbe060102669702cdc08d",
+      "bytes": 9495
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/preview.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/src/optical_lab/preview.py",
+      "sha256": "364f7eea18727f827b50d062a3fb8c77f4759264caf777edff068cf7c9acf9b9",
+      "bytes": 21360
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/preview_restart.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/src/optical_lab/preview_restart.py",
+      "sha256": "6d3c0bc5c847d83ba209efbeaad8e2327535527892947701a6761f0597c6b703",
+      "bytes": 30921
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/protocol.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/src/optical_lab/protocol.py",
+      "sha256": "2f651c945db41628181a93d7d77c61433c0ca8dce4ab0a79a41a13772618ab16",
+      "bytes": 1910
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/queued_display.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/src/optical_lab/queued_display.py",
+      "sha256": "517203d75716ae430e753022e93b1708f1415fa6d8ad02b38e20358f00fc4327",
+      "bytes": 1887
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/region_overlay.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/src/optical_lab/region_overlay.py",
+      "sha256": "802829d2376d3f7cd51d10e58d8a07a8b8b5017c2f3a0188a134e6d8f593bb1d",
+      "bytes": 9910
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/stability.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/src/optical_lab/stability.py",
+      "sha256": "fb937d0278185eef4baa68c46e56bae277b8257a690573feff193992fc9e11f7",
+      "bytes": 13308
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/stability_gui.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/src/optical_lab/stability_gui.py",
+      "sha256": "6cccb0ff24e04fbed8ff6e8be6f7edc2e6ae186625a52472b05285fbf4c00ea2",
+      "bytes": 29147
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/state_sampling.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/src/optical_lab/state_sampling.py",
+      "sha256": "7c8b00ed1365c07f8372ea43b41cd82f6119015f70c2c44cf7009d84be1789cf",
+      "bytes": 20535
+    },
+    {
+      "source": "ballplate_optical_lab/src/optical_lab/state_sampling_gui.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/src/optical_lab/state_sampling_gui.py",
+      "sha256": "c5683e8fe54503cef92b757adb4ef39794cbd7462d88a43f7298d745f8c5d717",
+      "bytes": 22700
+    },
+    {
+      "source": "ballplate_optical_lab/tests/test_state_sampling.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/tests/test_state_sampling.py",
+      "sha256": "d47c9c74a5b92f93c3bd0425703abaa9da81af27dd079981600eec301285377b",
+      "bytes": 16797
+    },
+    {
+      "source": "ballplate_optical_lab/tests/test_state_sampling_gui.py",
+      "destination": "snapshots/workspace/ballplate_optical_lab/tests/test_state_sampling_gui.py",
+      "sha256": "2725aa521d607e1d086c361f4295ace9d8abc549905b1e3078f653c87b67960f",
+      "bytes": 17257
+    },
+    {
+      "source": "ballplate_photonic_innovations/canonical_region.py",
+      "destination": "snapshots/workspace/ballplate_photonic_innovations/canonical_region.py",
+      "sha256": "d3e37babd9d5782f848c641ae29195b58b4c4ece1f5f99546147604ce46a4f93",
+      "bytes": 1603
+    },
+    {
+      "source": "ballplate_photonic_innovations/innov_runtime.py",
+      "destination": "snapshots/workspace/ballplate_photonic_innovations/innov_runtime.py",
+      "sha256": "c87776756b042d3b8a175e5780e3c31d2a81fba4d255166c0c675780bb400d78",
+      "bytes": 1181
+    },
+    {
+      "source": "ballplate_photonic_innovations/photonic_model.py",
+      "destination": "snapshots/workspace/ballplate_photonic_innovations/photonic_model.py",
+      "sha256": "964c33925bd81e6eb2bec140a1655d77fef37d95f76f7e10650bb069f23b145b",
+      "bytes": 12275
+    },
+    {
+      "source": "ballplate_photonic_innovations/readout_overlay.py",
+      "destination": "snapshots/workspace/ballplate_photonic_innovations/readout_overlay.py",
+      "sha256": "1bed536b9d9fa08a53a579482bb4057e3bce2908bcbb631bd0f6ffa3dfdaa190",
+      "bytes": 4132
+    },
+    {
+      "source": "ballplate_optical_lab/experiments/E107_paired_control_20261030_1/core.py",
+      "source_sha256": "c9b7b8485b0a04774bc738906ded2091a3e65cb45333a1323dab05312b02dc09",
+      "destination": "src/optical_lab/control.py",
+      "sha256": "a0918fe0dc2f396ac8395092f23a1098ccd7f1eeee5f06e0ed877eab961ec3aa",
+      "transformation": "AST extraction, unchanged function/class bodies"
+    }
+  ]
+}

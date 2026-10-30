@@ -1,0 +1,92 @@
+<mujoco model="dual servo linkage ball on plate">
+  <compiler angle="radian" autolimits="true"/>
+  <option timestep="0.002" integrator="implicitfast" gravity="0 0 -9.81" cone="elliptic" iterations="100"/>
+  <visual>
+    <global offwidth="960" offheight="720"/>
+    <headlight ambient="0.4 0.4 0.4" diffuse="0.7 0.7 0.7"/>
+  </visual>
+  <default>
+    <geom friction="0.6 0.005 0.0001" condim="6" solref="0.01 1"/>
+    <joint damping="0.01"/>
+    <default class="mechanism">
+      <geom contype="0" conaffinity="0" rgba="0.65 0.68 0.72 1"/>
+    </default>
+  </default>
+  <asset>
+    <texture name="grid" type="2d" builtin="checker" rgb1="0.16 0.30 0.38" rgb2="0.22 0.40 0.48" width="512" height="512"/>
+    <material name="board" texture="grid" texrepeat="8 8" reflectance="0.1"/>
+  </asset>
+  <worldbody>
+    <light pos="0 -1 2" dir="0 0 -1"/>
+    <camera name="overview" pos="1.05 1.10 0.85" xyaxes="-0.723 0.690 0 -0.23 -0.24 0.943"/>
+    <geom name="floor" type="plane" size="2 2 0.05" rgba="0.13 0.15 0.18 1"/>
+    <geom name="base" class="mechanism" type="box" pos="0 0 0.025" size="0.32 0.32 0.025" rgba="0.22 0.24 0.28 1"/>
+    <geom name="support" class="mechanism" type="cylinder" pos="0 0 0.195" size="0.018 0.145"/>
+    <geom name="pivot" class="mechanism" type="sphere" pos="0 0 0.35" size="0.023"/>
+    <!-- Passive universal pivot: only the two servo shafts below are actuated. -->
+    <body name="plate" pos="0 0 0.36">
+      <joint name="plate_roll" type="hinge" axis="1 0 0" range="-0.20 0.20"/>
+      <joint name="plate_pitch" type="hinge" axis="0 1 0" range="-0.20 0.20"/>
+      <geom name="plate_surface" type="box" size="0.30 0.30 0.01" mass="1.0" material="board"/>
+      <site name="center" pos="0 0 0.0105" type="cylinder" size="0.012 0.0005" rgba="1 0.7 0.1 1"/>
+      <site name="roll_attach" pos="0 0.22 -0.01" size="0.009" rgba="0.2 0.6 1 1"/>
+      <site name="pitch_attach" pos="0.22 0 -0.01" size="0.009" rgba="1 0.55 0.12 1"/>
+    </body>
+    <!-- Two fixed servo cases with output shafts at z=0.18 m. -->
+    <geom name="roll_mount" class="mechanism" type="box" pos="-0.027 0.17 0.10" size="0.04 0.04 0.05"/>
+    <geom name="roll_servo_case" class="mechanism" type="box" pos="-0.027 0.17 0.165" size="0.025 0.033 0.03" rgba="0.12 0.35 0.8 1"/>
+    <body name="roll_horn" pos="0 0.17 0.18" childclass="mechanism">
+      <joint name="servo_roll" type="hinge" axis="1 0 0" range="-0.85 0.85" armature="0.002"/>
+      <geom type="capsule" fromto="0 0 0 0 0.05 0" size="0.008" mass="0.025" rgba="0.2 0.6 1 1"/>
+      <body name="roll_rod" pos="0 0.05 0">
+        <joint name="roll_rod_ball" type="ball" damping="0.0002"/>
+        <geom type="capsule" fromto="0 0 0 0 0 0.17" size="0.005" mass="0.025"/>
+        <site name="roll_rod_tip" pos="0 0 0.17" size="0.007" rgba="0.2 0.6 1 1"/>
+      </body>
+    </body>
+    <geom name="pitch_mount" class="mechanism" type="box" pos="0.17 -0.027 0.10" size="0.04 0.04 0.05"/>
+    <geom name="pitch_servo_case" class="mechanism" type="box" pos="0.17 -0.027 0.165" size="0.033 0.025 0.03" rgba="0.85 0.36 0.07 1"/>
+    <body name="pitch_horn" pos="0.17 0 0.18" childclass="mechanism">
+      <joint name="servo_pitch" type="hinge" axis="0 1 0" range="-0.85 0.85" armature="0.002"/>
+      <geom type="capsule" fromto="0 0 0 0.05 0 0" size="0.008" mass="0.025" rgba="1 0.55 0.12 1"/>
+      <body name="pitch_rod" pos="0.05 0 0">
+        <joint name="pitch_rod_ball" type="ball" damping="0.0002"/>
+        <geom type="capsule" fromto="0 0 0 0 0 0.17" size="0.005" mass="0.025"/>
+        <site name="pitch_rod_tip" pos="0 0 0.17" size="0.007" rgba="1 0.55 0.12 1"/>
+      </body>
+    </body>
+    <body name="ball" pos="0 0 0.396">
+      <!-- A free joint gives translation AND rotation, required for rolling. -->
+      <freejoint name="ball_free"/>
+      <geom name="ball_geom" type="sphere" size="0.025" mass="0.05" rgba="1 0.28 0.07 1"/>
+      <site name="rotation_marker" pos="0 0 0.024" size="0.004" rgba="1 1 1 1"/>
+    </body>
+    <camera name="ball_camera"
+        pos="0 0 0.90"
+        xyaxes="1 0 0 0 1 0"
+        resolution="640 480"
+        fovy="70"
+        mode="fixed"
+        output="rgb depth"/>
+  </worldbody>
+  <equality>
+    <connect name="roll_link" site1="roll_rod_tip" site2="roll_attach" solref="0.004 1" solimp="0.99 0.999 0.001"/>
+    <connect name="pitch_link" site1="pitch_rod_tip" site2="pitch_attach" solref="0.004 1" solimp="0.99 0.999 0.001"/>
+  </equality>
+  <actuator>
+    <position name="roll_target" joint="servo_roll" kp="20" kv="0.7" ctrlrange="-0.8 0.8" forcerange="-1.5 1.5"/>
+    <position name="pitch_target" joint="servo_pitch" kp="20" kv="0.7" ctrlrange="-0.8 0.8" forcerange="-1.5 1.5"/>
+  </actuator>
+  <sensor>
+    <jointpos name="plate_roll_angle" joint="plate_roll"/>
+    <jointpos name="plate_pitch_angle" joint="plate_pitch"/>
+    <jointvel name="plate_roll_speed" joint="plate_roll"/>
+    <jointvel name="plate_pitch_speed" joint="plate_pitch"/>
+    <jointpos name="servo_roll_angle" joint="servo_roll"/>
+    <jointpos name="servo_pitch_angle" joint="servo_pitch"/>
+    <actuatorfrc name="servo_roll_torque" actuator="roll_target"/>
+    <actuatorfrc name="servo_pitch_torque" actuator="pitch_target"/>
+    <framepos name="ball_position" objtype="body" objname="ball" reftype="body" refname="plate"/>
+  </sensor>
+</mujoco>
+

@@ -1,0 +1,275 @@
+"""Two-page workbench, one explicit composition; no chained experiment mains.
+
+Default and preparation are offline. Hardware needs freshly retained state,
+normal-close evidence and current shielding; no automatic capture/projection.
+"""
+import argparse
+from contextlib import ExitStack
+from copy import deepcopy
+import hashlib
+import importlib.util
+import json
+import os
+from pathlib import Path
+import sys
+
+ROOT = Path(__file__).resolve().parent
+LAB = ROOT.parents[1]
+LEGACY = LAB.parent/'ballplate_fourframe96_deploy'
+PRIOR = LAB/'experiments/E078_shared_main_20261027_1'
+PREVIOUS = LAB/'experiments/E080_ball_input_20261027_1'
+FILTER = LAB/'experiments/E079_shared_filter_20261027_1'
+SAMPLING = LAB/'experiments/E077_stability_simplify_20261027_1'
+REPAIRS = LAB/'experiments/E075_spatial_repair_20261027_1'
+DISPLAY = LAB/'experiments/E074_dmd1920_rollback_20261026_1'
+CATALOG = PREVIOUS/'catalog.py'
+MODULATOR = LAB.parent/'ballplate_minframes_optical_ppo/SDON_Linux_Handoff_20261015/src/sdon/hardware/modulator.py'
+MASK = LAB/'experiments/E035_mapping_night_20261024_1/REFIT_L00_BALANCED_01/BALANCED_CCD_AXES_NATIVE8.npy'
+
+
+def sha(path): return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+def ref(path): return dict(path=str(Path(path).resolve()), sha256=sha(path))
+def read(path): return json.loads(Path(path).read_text())
+def write(path, value):
+    with Path(path).open('x', encoding='utf-8') as f:
+        json.dump(value, f, ensure_ascii=False, indent=2, allow_nan=False)
+def load(name, path):
+    spec = importlib.util.spec_from_file_location(name, path)
+    m = importlib.util.module_from_spec(spec); sys.modules[name] = m
+    if '.' in name:
+        parent, child = name.rsplit('.', 1); setattr(sys.modules[parent], child, m)
+    spec.loader.exec_module(m)
+    return m
+
+
+def install_modules():
+    import optical_lab
+    for name in ('effective_frame','region_overlay', 'state_sampling', 'state_sampling_gui', 'stability', 'stability_gui'):
+        source=ROOT if name in ('effective_frame','region_overlay','stability','stability_gui') else SAMPLING
+        load('optical_lab.'+name, source/'staged/optical_lab'/(name+'.py'))
+
+
+def prepare(folder):
+    if folder.parent != ROOT or folder.exists(): raise ValueError('fresh experiment child required')
+    cfg = read(PREVIOUS/'CONFIG.json')
+    for path, digest in cfg['source_sha256'].items():
+        if sha(path) != digest: raise ValueError('preserved source changed: '+path)
+    folder.mkdir()
+    files = [ROOT/'run.py', PRIOR/'workbench.py', CATALOG, SAMPLING/'scaling.py', *sorted((ROOT/'staged/optical_lab').glob('*.py'))]
+    cfg['source_sha256'].update({str(p):sha(p) for p in files})
+    cfg.update(offline_preparation_only=True)
+    # Old mean2 is only an archived preview choice; preserve its two-frame intent
+    # in a new file, never mutate the old pinned display configuration.
+    display=read(cfg['display']['path'])
+    if display.get('preview_filter',{}).get('mode')=='mean2':
+        display['preview_filter']['mode']='mean';cfg['shared_filter_frames']=2
+    write(folder/'DISPLAY.json',display);cfg['display']=ref(folder/'DISPLAY.json')
+    cfg.pop('lifecycle_release', None)
+    contract = read(cfg['contract']['path'])
+    contract['source_sha256'] = cfg['source_sha256']
+    contract['dmd_scale_feature'] = dict(default=1., maximum=1.8, manual_only=False, control_qualified=False)
+    write(folder/'CONTRACT.json', contract); cfg['contract'] = ref(folder/'CONTRACT.json')
+    write(folder/'CONFIG.json', cfg)
+    return dict(config=ref(folder/'CONFIG.json'), hardware_actions=0)
+
+
+def run_gui(cfg, destination, hardware):
+    install_modules()
+    repairs = load('e078_alignment_composition', REPAIRS/'run.py')
+    repairs.install(cfg)
+    load('optical_lab.display',FILTER/'staged/optical_lab/display.py')
+    display_backend = load('e078_display_identity', DISPLAY/'run.py')
+    display_backend.install_display(read(cfg['display_profile']['path']))
+    scale = load('e079_scaling', SAMPLING/'scaling.py')
+    compact = load('e079_compact', PRIOR/'workbench.py')
+    catalog = load('e080_catalog', CATALOG)
+    binding = load('e078_display_binding', LAB/'experiments/E069_actual_display_binding_20261026_1/display_binding.py')
+    startup = load('e078_sampler_composition', LAB/'experiments/E045_dense_state_sampling_20261025_1/run.py')
+    from optical_lab import preview, exposure, display, region_overlay, state_sampling_gui, stability_gui
+    from optical_lab.queued_display import queued_modulator
+    layout = region_overlay.load_layout(MASK, sha(MASK), read(cfg['contract']['path'])['fixed_context']['roi'])
+    output = destination/'GUI'; spool = destination/'GUI_SPOOL'
+    stack = ExitStack(); binding_evidence = {}; window_box = []; errors = []
+    original_load = preview._load_legacy
+    def legacy(path):
+        cls = original_load(path)
+        import realtime_gui, diffraction_worker, sdon.hardware.modulator as mod
+        stack.enter_context(binding.bound_modulators(mod, queued_modulator, MODULATOR,
+            cfg['source_sha256'][str(MODULATOR)], binding_evidence))
+        scale.install_window(realtime_gui.RealtimeWindow)
+        scale.install_reference(diffraction_worker.DiffractionWorker)
+        scale.tag_reference_results(diffraction_worker.DiffractionWorker)
+        realtime_gui.RealtimeWindow.show_outputs = scale.show_outputs
+        return cls
+    preview._load_legacy = legacy
+    original_manual = display.attach_manual_display
+    def manual(w, initial=None):
+        panel = original_manual(w, initial); overlay=region_overlay.attach(w, layout)
+        overlay.checkbox.setChecked(cfg.get('retained_region_overlay',False))
+        count=cfg.get('retained_region_count',8)
+        if count not in (8,16,32,64):raise ValueError('invalid retained readout count')
+        overlay.selector.setCurrentIndex(overlay.selector.findData(count))
+        return panel
+    display.attach_manual_display = manual
+    def sampler_attached(w, sampler):
+        flow = stability_gui.attach(w, cfg['contract'], destination/'TESTS', ref(MASK), layout['roi'])
+        fields = dict(repeats='repeats', settle='settle_seconds', interval='interval_seconds')
+        for key, field in fields.items():
+            widget=flow.widgets[key]; value=cfg['settings'][field]
+            widget.setValue(value)
+        flow.widgets['mode'].setCurrentIndex(1 if cfg['settings']['switch_inputs'] else 0)
+    original_adaptation = display.attach_adaptation_display
+    def finalize(w):
+        result = original_adaptation(w)
+        compact.attach(w); catalog.attach(w, cfg['catalog_preset']); scale.attach(w)
+        flow=w.stability_workflow; q=flow.widgets
+        q['head_enabled'].setText('计算对应分区线性头的控制指标（可选）')
+        w.raw_workbench['readout']='RAW_shared_effective_frame_selected_regions'
+        q['result_domain'].setToolTip('主界面同一套独立窗滤波→浮点RAW所选区域积分；显示增益/黑电平/γ仅作处理后对照。')
+        w.manual_display.controls.filter_frames.setValue(cfg.get('shared_filter_frames',cfg['settings']['frames']))
+        data, assets=catalog.validate(cfg['catalog_preset'])
+        probes={r['input_id'] for r in data['inputs'] if r.get('input_kind')=='calibration_probe_not_MuJoCo_state' or r.get('state_fields_are_loader_placeholders')}
+        assets=[a for a in assets if a['input_id'] not in probes];flow.assets=assets
+        flow.template['input_catalog']=dict(reference=deepcopy(cfg['catalog_preset']),metadata=data,
+            loaded_at_fresh_startup_without_projection=True,control_qualified=False)
+        for item in [cfg['catalog_preset']]+[v[k] for v in data['inputs'] for k in ('dmd','encoded_raw96')]:
+            flow.template['source_sha256'][item['path']]=item['sha256']
+        for row in data['inputs']:
+            if 'SOURCE_RAW96' in row:
+                item=row['SOURCE_RAW96'];flow.template['source_sha256'][item['path']]=item['sha256']
+        retained=cfg.get('retained_test_controls',{})
+        if retained.get('mode'):
+            index=q['mode'].findData(retained['mode'])
+            if index<0:raise ValueError('unknown retained test mode')
+            q['mode'].setCurrentIndex(index)
+        for key in ('input_a','input_b'):
+            q[key].clear()
+            for item in assets:q[key].addItem(item['input_id'],item['input_id'])
+            desired=retained.get('selected_ids',{}).get(key,'CENTER' if key=='input_a' else 'VY_POS')
+            q[key].setCurrentIndex(max(0,q[key].findData(desired)))
+        catalog.refresh_main_inputs(w);flow.update_budget()
+        catalog.restore_manual_origin(w,cfg['caches'])
+        if cfg.get('retained_pending_ball_radius') is not None:
+            w.ball_size_controls['radius'].setValue(cfg['retained_pending_ball_radius'])
+        head=cfg.get('head_preset')
+        if head:
+            from optical_lab import stability
+            if sha(head['path']) != head['sha256']:raise ValueError('head source changed')
+            flow.head_record=stability.load_head(head['path'])
+            q['head_enabled'].setChecked(retained.get('head_enabled',False))
+            q['head_path'].setText(head['path'])
+        w.dmd_scale.setValue(cfg.get('retained_dmd_scale',1.))
+        w.tabs.setTabText(1,'读出稳定性测试')
+        w.raw_workbench['note'].setText('器件、球大小、读出区域、滤波方式/N/α均在主界面管理；本页只选择激励与重复次数。有效帧浮点积分，显示映射另计。')
+        w.setWindowTitle('光路工作台 · 主界面统一参数 · 8/16/32/64读出'+(' · 真实器件' if hardware else ' · 离线检查'))
+        q['status'].setText('未自动投图或采集。滤波参数来自主界面，确认光路条件后点击一键测试。')
+        assert w.tabs.count()==2 and w.worker is None and not w.armed.isChecked()
+        evidence=dict(pages=[w.tabs.tabText(i) for i in range(2)],
+            display_binding=binding.verify_instances(w,binding_evidence),automatic_projection=False,automatic_capture=False,
+            effective_frame=dict(source='native RAW, not GUI subsampled frames',independent_windows=True,
+                shared_algorithm=True,test_preview_source='exact archived test effective image',
+                controls='main page only',raw_preserved=True,hardware_timing_equivalence_claimed=False,
+                supersedes_legacy_preview_only_temporal_filter_metadata=True))
+        write((output if hardware else destination)/'COMPOSITION.json',evidence); window_box.append(w)
+        if not hardware:
+            from PyQt5 import QtCore,QtWidgets,QtGui
+            import numpy as np
+            def screenshots():
+                assert not w.hardware and not w.windows and w.worker is None
+                w.resize(1500,1000); w.tabs.setCurrentIndex(0)
+                # Synthetic downsampled preview exercises proportional eight-region overlay.
+                image=np.zeros((416,416),np.uint8)
+                w.view.active_roi=dict(OffsetX=744,OffsetY=276,Width=832,Height=832)
+                w.view.set_image(image,extent=(832,832))
+                w.fault=None;w.region_overlay.checkbox.setChecked(True);w.region_overlay.refresh()
+                assert len(w.region_overlay.plan())==w.region_overlay.count and w.region_overlay.last_error is None
+                QtWidgets.QApplication.processEvents();w.grab().save(str(destination/'manual_eight_regions.png'))
+                w.tabs.setCurrentIndex(1);QtWidgets.QApplication.processEvents()
+                w.grab().save(str(destination/'stability_controls.png'))
+                write(destination/'SMOKE.json',dict(passed=True,hardware_actions=0,
+                    pages=2,all_selected_regions_overlay=True,downsampled_preview_supported=True,
+                    no_duplicate_camera_controls=not any(k in flow.widgets for k in ('gain','exposure','software_gain','black','gamma')),
+                    no_reference_controls=not any('reference' in k or k=='input_ref' for k in flow.widgets),
+                    no_test_N_control='frames' not in flow.widgets,
+                    shared_filter_controls=w.manual_display.controls.filter_frames.minimum()==2,
+                    main_ball_controls=w.tabs.widget(0).isAncestorOf(w.ball_size_controls['group']),
+                    no_scale_start_wrapper=flow.start.__func__ is stability_gui.Workflow.start))
+            QtCore.QTimer.singleShot(100,screenshots)
+        return result
+    display.attach_adaptation_display=finalize
+    args=['--legacy-root',str(LEGACY),'--output',str(output),
+        '--restart-state',cfg['restart']['path'],'--recovery-record',cfg['recovery']['path'],
+        '--display-state',cfg['display']['path'],'--display-state-sha256',cfg['display']['sha256'],
+        '--preview-caches',cfg['caches']['path'],'--preview-caches-sha256',cfg['caches']['sha256']]
+    if cfg.get('geometry'):
+        args+=['--manual-geometry-state',cfg['geometry']['path'],'--manual-geometry-sha256',cfg['geometry']['sha256']]
+    else:
+        # Matching current reference uses the original pending-registration path.
+        # Restore pattern modes after manual controls exist, with output disarmed.
+        original_finalize=display.attach_adaptation_display
+        def with_retained_modes(w):
+            value=original_finalize(w)
+            state=cfg.get('retained_manual_controls',{})
+            for widget,key in ((w.dmd_mode,'dmd'),(w.slm_mode,'slm')):
+                if state.get('settings'):widget.setCurrentIndex(widget.findData(state['settings'][key]))
+            if 'orientation' in state:w.orientation.setCurrentIndex(state['orientation'])
+            registration=read(cfg['restart']['path']).get('registration')
+            if registration is not None:
+                if registration.get('dmd_side',600)!=w._dmd_side:raise ValueError('retained matrix DMD scale mismatch')
+                # Startup scale/direction widgets clear mapping; restore ONLY
+                # pending evidence after these widgets, not a validated result.
+                assert w.worker is None and not w.armed.isChecked()
+                w.pending_registration=deepcopy(registration)
+                w.mapping_status.setText('保留当前倍率；待新CCD参数签名复核后恢复，不重新拟合。')
+            w.changed()
+            return value
+        display.attach_adaptation_display=with_retained_modes
+    args+=['--hardware','--light-blocked-confirmed'] if hardware else ['--smoke-test']
+    old_hook=sys.excepthook
+    def exception(typ,error,tb):errors.append(str(error));old_hook(typ,error,tb)
+    if not hardware:sys.excepthook=exception
+    try:
+        with stack,startup.startup_composition(exposure,display,state_sampling_gui.attach,cfg['contract'],spool,read(cfg['display']['path']),sampler_attached):
+            preview.main(args)
+    finally:
+        preview._load_legacy=original_load;display.attach_manual_display=original_manual
+        display.attach_adaptation_display=original_adaptation;sys.excepthook=old_hook
+    if not window_box or errors:raise RuntimeError('composition failed: '+str(errors))
+    if not hardware and not read(destination/'SMOKE.json')['passed']:raise RuntimeError('smoke failed')
+
+
+def main():
+    p=argparse.ArgumentParser(description=__doc__)
+    g=p.add_mutually_exclusive_group();g.add_argument('--prepare-offline',type=Path)
+    g.add_argument('--offline-smoke',action='store_true');g.add_argument('--hardware',action='store_true')
+    p.add_argument('--config',type=Path);p.add_argument('--config-sha256');p.add_argument('--output',type=Path)
+    p.add_argument('--light-blocked-confirmed',action='store_true');a=p.parse_args()
+    if a.prepare_offline:print(json.dumps(prepare(a.prepare_offline.resolve()),ensure_ascii=False));return
+    if not(a.offline_smoke or a.hardware):print('{"default_IO":0}');return
+    if a.config:a.config=a.config.resolve()
+    if a.output:a.output=a.output.resolve()
+    if not a.config or sha(a.config)!=a.config_sha256:raise ValueError('explicit config SHA required')
+    cfg=read(a.config)
+    for path,digest in cfg['source_sha256'].items():
+        if sha(path)!=digest:raise ValueError('source changed: '+path)
+    for key in ('contract','restart','recovery','display','caches','display_profile'):
+        if sha(cfg[key]['path'])!=cfg[key]['sha256']:raise ValueError('config artifact changed: '+key)
+    if cfg.get('geometry') and sha(cfg['geometry']['path'])!=cfg['geometry']['sha256']:raise ValueError('geometry artifact changed')
+    if a.hardware:
+        if not a.light_blocked_confirmed or cfg.get('offline_preparation_only') is not False or a.output is not None:
+            raise ValueError('current shielding and fresh sealed hardware configuration required')
+        proof=cfg['lifecycle_release'];evidence=read(proof['path'])
+        if sha(proof['path'])!=proof['sha256'] or not all(evidence.get(k) is True for k in
+            ('completed','old_normal_exit_verified','cold_baseline_verified','physical_shielding_confirmed')):
+            raise ValueError('normal-close and standby verification required')
+        backend=load('e078_owner_check',DISPLAY/'run.py');backend.no_owner()
+        if a.config!=ROOT/'CONFIG.json' or os.environ.get('QT_QPA_PLATFORM')!='xcb':raise ValueError('sealed root config/xcb required')
+        destination=ROOT
+    else:
+        if not a.output or a.output.parent!=ROOT or a.output.exists() or os.environ.get('QT_QPA_PLATFORM')!='offscreen' or a.light_blocked_confirmed:
+            raise ValueError('fresh offscreen output required')
+        destination=a.output;destination.mkdir()
+    run_gui(cfg,destination,a.hardware)
+
+
+if __name__=='__main__':main()
